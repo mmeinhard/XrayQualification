@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.9.27)  9 JAN 2017 11:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.9.27)  9 JAN 2017 11:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -782,22 +782,22 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 \c__siunitx_mathsf_int=\count186
 \c__siunitx_mathtt_int=\count187
- <./L1.jpg, id=4, 1284.8pt x 770.88pt>
-File: ./L1.jpg Graphic file (type jpg)
- <use ./L1.jpg>
-Package pdftex.def Info: ./L1.jpg used on input line 58.
+ <./Figures/L1.jpg, id=4, 1284.8pt x 770.88pt>
+File: ./Figures/L1.jpg Graphic file (type jpg)
+ <use ./Figures/L1.jpg>
+Package pdftex.def Info: ./Figures/L1.jpg used on input line 58.
 (pdftex.def)             Requested size: 209.1301pt x 125.47235pt.
 
-<./L2.jpg, id=5, 1284.8pt x 770.88pt>
-File: ./L2.jpg Graphic file (type jpg)
- <use ./L2.jpg>
-Package pdftex.def Info: ./L2.jpg used on input line 65.
+<./Figures/L2.jpg, id=5, 1284.8pt x 770.88pt>
+File: ./Figures/L2.jpg Graphic file (type jpg)
+ <use ./Figures/L2.jpg>
+Package pdftex.def Info: ./Figures/L2.jpg used on input line 65.
 (pdftex.def)             Requested size: 209.1301pt x 125.47235pt.
 
-<./Setup.jpg, id=7, 2569.6pt x 1541.76pt>
-File: ./Setup.jpg Graphic file (type jpg)
- <use ./Setup.jpg>
-Package pdftex.def Info: ./Setup.jpg used on input line 78.
+<./Figures/Setup.jpg, id=7, 2569.6pt x 1541.76pt>
+File: ./Figures/Setup.jpg Graphic file (type jpg)
+ <use ./Figures/Setup.jpg>
+Package pdftex.def Info: ./Figures/Setup.jpg used on input line 78.
 (pdftex.def)             Requested size: 426.79134pt x 256.07324pt.
 
 
@@ -805,38 +805,38 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./L1.jpg> <./L2.jpg>]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Figures/L1.jpg> <./Figur
+es/L2.jpg>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 89.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 89.
 
-<./Water2.jpg, id=21, 1541.76pt x 2569.6pt>
-File: ./Water2.jpg Graphic file (type jpg)
- <use ./Water2.jpg>
-Package pdftex.def Info: ./Water2.jpg used on input line 91.
+<./Figures/Water2.jpg, id=21, 1541.76pt x 2569.6pt>
+File: ./Figures/Water2.jpg Graphic file (type jpg)
+ <use ./Figures/Water2.jpg>
+Package pdftex.def Info: ./Figures/Water2.jpg used on input line 91.
 (pdftex.def)             Requested size: 213.39566pt x 355.62462pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./Full2.jpg, id=23, 2569.6pt x 994.71625pt>
-File: ./Full2.jpg Graphic file (type jpg)
- <use ./Full2.jpg>
-Package pdftex.def Info: ./Full2.jpg used on input line 99.
+<./Figures/Full2.jpg, id=23, 2569.6pt x 994.71625pt>
+File: ./Figures/Full2.jpg Graphic file (type jpg)
+ <use ./Figures/Full2.jpg>
+Package pdftex.def Info: ./Figures/Full2.jpg used on input line 99.
 (pdftex.def)             Requested size: 384.10959pt x 148.68494pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./CommandBoard2.jpg, id=25, 2569.6pt x 1157.32375pt>
-File: ./CommandBoard2.jpg Graphic file (type jpg)
+<./Figures/CommandBoard2.jpg, id=25, 2569.6pt x 1157.32375pt>
+File: ./Figures/CommandBoard2.jpg Graphic file (type jpg)
 
-<use ./CommandBoard2.jpg>
-Package pdftex.def Info: ./CommandBoard2.jpg used on input line 107.
+<use ./Figures/CommandBoard2.jpg>
+Package pdftex.def Info: ./Figures/CommandBoard2.jpg used on input line 107.
 (pdftex.def)             Requested size: 384.10959pt x 172.99065pt.
 
 
@@ -852,48 +852,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--116
 
  []
 
-[2 <./Setup.jpg>]
+[2 <./Figures/Setup.jpg>]
 Underfull \vbox (badness 3690) has occurred while \output is active []
 
- [3 <./Water2.jpg> <./Full2.jpg>] <./Targets.jpg, id=41, 2569.6pt x 1541.76pt>
-File: ./Targets.jpg Graphic file (type jpg)
+ [3 <./Figures/Water2.jpg> <./Figures/Full2.jpg>]
+<./Figures/Targets.jpg, id=41, 2569.6pt x 1541.76pt>
+File: ./Figures/Targets.jpg Graphic file (type jpg)
 
-<use ./Targets.jpg>
-Package pdftex.def Info: ./Targets.jpg used on input line 142.
+<use ./Figures/Targets.jpg>
+Package pdftex.def Info: ./Figures/Targets.jpg used on input line 142.
 (pdftex.def)             Requested size: 384.10959pt x 230.45416pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4 <./CommandBoard2.jpg>] <./Keithley.jpg, id=51, 2569.6pt x 1541.76pt>
-File: ./Keithley.jpg Graphic file (type jpg)
+[4 <./Figures/CommandBoard2.jpg>]
+<./Figures/Keithley.jpg, id=51, 2569.6pt x 1541.76pt>
+File: ./Figures/Keithley.jpg Graphic file (type jpg)
 
-<use ./Keithley.jpg>
-Package pdftex.def Info: ./Keithley.jpg used on input line 172.
+<use ./Figures/Keithley.jpg>
+Package pdftex.def Info: ./Figures/Keithley.jpg used on input line 172.
 (pdftex.def)             Requested size: 384.10959pt x 230.45416pt.
- [5 <./Targets.jpg>] [6 <./Keithley.jpg>]
-<./Material.jpg, id=78, 2569.6pt x 1541.76pt>
-File: ./Material.jpg Graphic file (type jpg)
- <use ./Material.jpg>
-Package pdftex.def Info: ./Material.jpg used on input line 198.
+ [5 <./Figures/Targets.jpg>] [6 <./Figures/Keithley.jpg>] <./Figures/Material.j
+pg, id=78, 2569.6pt x 1541.76pt>
+File: ./Figures/Material.jpg Graphic file (type jpg)
+
+<use ./Figures/Material.jpg>
+Package pdftex.def Info: ./Figures/Material.jpg used on input line 198.
 (pdftex.def)             Requested size: 384.10959pt x 230.45416pt.
 
-<./L1test.jpg, id=79, 1284.8pt x 770.88pt>
-File: ./L1test.jpg Graphic file (type jpg)
- <use ./L1test.jpg>
-Package pdftex.def Info: ./L1test.jpg used on input line 217.
+<./Figures/L1test.jpg, id=79, 1284.8pt x 770.88pt>
+File: ./Figures/L1test.jpg Graphic file (type jpg)
+ <use ./Figures/L1test.jpg>
+Package pdftex.def Info: ./Figures/L1test.jpg used on input line 217.
 (pdftex.def)             Requested size: 209.1301pt x 125.47235pt.
 
-<./L2test.jpg, id=80, 1284.8pt x 770.88pt>
-File: ./L2test.jpg Graphic file (type jpg)
- <use ./L2test.jpg>
-Package pdftex.def Info: ./L2test.jpg used on input line 224.
+<./Figures/L2test.jpg, id=80, 1284.8pt x 770.88pt>
+File: ./Figures/L2test.jpg Graphic file (type jpg)
+ <use ./Figures/L2test.jpg>
+Package pdftex.def Info: ./Figures/L2test.jpg used on input line 224.
 (pdftex.def)             Requested size: 209.1301pt x 125.47235pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7 <./Material.jpg>] [8 <./L1test.jpg> <./L2test.jpg>]
+[7 <./Figures/Material.jpg>] [8 <./Figures/L1test.jpg> <./Figures/L2test.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 280--281
 
  []
@@ -934,197 +937,215 @@ Underfull \hbox (badness 10000) in paragraph at lines 403--407
 
  []
 
-[13] <./RetrimHotPixels_Map.pdf, id=153, 569.12625pt x 569.12625pt>
-File: ./RetrimHotPixels_Map.pdf Graphic file (type pdf)
+[13] <./Figures/RetrimHotPixels_Map.pdf, id=153, 569.12625pt x 569.12625pt>
+File: ./Figures/RetrimHotPixels_Map.pdf Graphic file (type pdf)
 
-<use ./RetrimHotPixels_Map.pdf>
-Package pdftex.def Info: ./RetrimHotPixels_Map.pdf used on input line 419.
+<use ./Figures/RetrimHotPixels_Map.pdf>
+Package pdftex.def Info: ./Figures/RetrimHotPixels_Map.pdf used on input line 4
+19.
 (pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
 
-<./RetrimHotPixels_TrimBitDiff.pdf, id=154, 569.12625pt x 569.12625pt>
-File: ./RetrimHotPixels_TrimBitDiff.pdf Graphic file (type pdf)
+<./Figures/RetrimHotPixels_TrimBitDiff.pdf, id=154, 569.12625pt x 569.12625pt>
+File: ./Figures/RetrimHotPixels_TrimBitDiff.pdf Graphic file (type pdf)
 
-<use ./RetrimHotPixels_TrimBitDiff.pdf>
-Package pdftex.def Info: ./RetrimHotPixels_TrimBitDiff.pdf used on input line 4
-26.
+<use ./Figures/RetrimHotPixels_TrimBitDiff.pdf>
+Package pdftex.def Info: ./Figures/RetrimHotPixels_TrimBitDiff.pdf used on inpu
+t line 426.
 (pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
- [14 <./RetrimHotPixels_Map.pdf> <./RetrimHotPixels_TrimBitDiff.pdf>]
-<./HRData_PHMap.pdf, id=260, 569.12625pt x 569.12625pt>
-File: ./HRData_PHMap.pdf Graphic file (type pdf)
+ [14 <./Figures/RetrimHotPixels_Map.pdf> <./Figures/RetrimHotPixels_TrimBitDiff
+.pdf>]
+<./Figures/HRData_PHMap.pdf, id=260, 569.12625pt x 569.12625pt>
+File: ./Figures/HRData_PHMap.pdf Graphic file (type pdf)
 
-<use ./HRData_PHMap.pdf>
-Package pdftex.def Info: ./HRData_PHMap.pdf used on input line 445.
-(pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
-
-<./HRData_ph_histo.pdf, id=261, 569.12625pt x 569.12625pt>
-File: ./HRData_ph_histo.pdf Graphic file (type pdf)
-
-<use ./HRData_ph_histo.pdf>
-Package pdftex.def Info: ./HRData_ph_histo.pdf used on input line 452.
+<use ./Figures/HRData_PHMap.pdf>
+Package pdftex.def Info: ./Figures/HRData_PHMap.pdf used on input line 445.
 (pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
 
-<./HRData_qMap.pdf, id=262, 569.12625pt x 569.12625pt>
-File: ./HRData_qMap.pdf Graphic file (type pdf)
- <use ./HRData_qMap.pdf>
-Package pdftex.def Info: ./HRData_qMap.pdf used on input line 462.
+<./Figures/HRData_ph_histo.pdf, id=261, 569.12625pt x 569.12625pt>
+File: ./Figures/HRData_ph_histo.pdf Graphic file (type pdf)
+
+<use ./Figures/HRData_ph_histo.pdf>
+Package pdftex.def Info: ./Figures/HRData_ph_histo.pdf used on input line 452.
 (pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
 
-<./HRData_q_histo.pdf, id=263, 569.12625pt x 569.12625pt>
-File: ./HRData_q_histo.pdf Graphic file (type pdf)
+<./Figures/HRData_qMap.pdf, id=262, 569.12625pt x 569.12625pt>
+File: ./Figures/HRData_qMap.pdf Graphic file (type pdf)
 
-<use ./HRData_q_histo.pdf>
-Package pdftex.def Info: ./HRData_q_histo.pdf used on input line 469.
+<use ./Figures/HRData_qMap.pdf>
+Package pdftex.def Info: ./Figures/HRData_qMap.pdf used on input line 462.
 (pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
 
+<./Figures/HRData_q_histo.pdf, id=263, 569.12625pt x 569.12625pt>
+File: ./Figures/HRData_q_histo.pdf Graphic file (type pdf)
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./HRData_Hitmap.pdf, id=264, 569.12625pt x 569.12625pt>
-File: ./HRData_Hitmap.pdf Graphic file (type pdf)
-
-<use ./HRData_Hitmap.pdf>
-Package pdftex.def Info: ./HRData_Hitmap.pdf used on input line 479.
-(pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
-
-<./HRData_HitsEvents.pdf, id=265, 569.12625pt x 569.12625pt>
-File: ./HRData_HitsEvents.pdf Graphic file (type pdf)
-
-<use ./HRData_HitsEvents.pdf>
-Package pdftex.def Info: ./HRData_HitsEvents.pdf used on input line 486.
+<use ./Figures/HRData_q_histo.pdf>
+Package pdftex.def Info: ./Figures/HRData_q_histo.pdf used on input line 469.
 (pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./HRData_HitsColumn.pdf, id=266, 569.12625pt x 569.12625pt>
-File: ./HRData_HitsColumn.pdf Graphic file (type pdf)
+<./Figures/HRData_Hitmap.pdf, id=264, 569.12625pt x 569.12625pt>
+File: ./Figures/HRData_Hitmap.pdf Graphic file (type pdf)
 
-<use ./HRData_HitsColumn.pdf>
-Package pdftex.def Info: ./HRData_HitsColumn.pdf used on input line 496.
+<use ./Figures/HRData_Hitmap.pdf>
+Package pdftex.def Info: ./Figures/HRData_Hitmap.pdf used on input line 479.
 (pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
 
-<./HRData_HitsEventColumn.pdf, id=267, 569.12625pt x 569.12625pt>
-File: ./HRData_HitsEventColumn.pdf Graphic file (type pdf)
+<./Figures/HRData_HitsEvents.pdf, id=265, 569.12625pt x 569.12625pt>
+File: ./Figures/HRData_HitsEvents.pdf Graphic file (type pdf)
 
-<use ./HRData_HitsEventColumn.pdf>
-Package pdftex.def Info: ./HRData_HitsEventColumn.pdf used on input line 503.
-(pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[15 <./HRData_PHMap.pdf> <./HRData_ph_histo.pdf>]
-<./HRSCurves_thrMap.pdf, id=367, 569.12625pt x 569.12625pt>
-File: ./HRSCurves_thrMap.pdf Graphic file (type pdf)
-
-<use ./HRSCurves_thrMap.pdf>
-Package pdftex.def Info: ./HRSCurves_thrMap.pdf used on input line 522.
-(pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
-
-<./HRSCurves_thrDist.pdf, id=368, 569.12625pt x 569.12625pt>
-File: ./HRSCurves_thrDist.pdf Graphic file (type pdf)
-
-<use ./HRSCurves_thrDist.pdf>
-Package pdftex.def Info: ./HRSCurves_thrDist.pdf used on input line 529.
+<use ./Figures/HRData_HitsEvents.pdf>
+Package pdftex.def Info: ./Figures/HRData_HitsEvents.pdf used on input line 486
+.
 (pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./HRSCurves_sigMap.pdf, id=369, 569.12625pt x 569.12625pt>
-File: ./HRSCurves_sigMap.pdf Graphic file (type pdf)
+<./Figures/HRData_HitsColumn.pdf, id=266, 569.12625pt x 569.12625pt>
+File: ./Figures/HRData_HitsColumn.pdf Graphic file (type pdf)
 
-<use ./HRSCurves_sigMap.pdf>
-Package pdftex.def Info: ./HRSCurves_sigMap.pdf used on input line 539.
+<use ./Figures/HRData_HitsColumn.pdf>
+Package pdftex.def Info: ./Figures/HRData_HitsColumn.pdf used on input line 496
+.
 (pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
 
-<./HRSCurves_sigDist.pdf, id=370, 569.12625pt x 569.12625pt>
-File: ./HRSCurves_sigDist.pdf Graphic file (type pdf)
+<./Figures/HRData_HitsEventColumn.pdf, id=267, 569.12625pt x 569.12625pt>
+File: ./Figures/HRData_HitsEventColumn.pdf Graphic file (type pdf)
 
-<use ./HRSCurves_sigDist.pdf>
-Package pdftex.def Info: ./HRSCurves_sigDist.pdf used on input line 546.
-(pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./HRSCurves_thnMap.pdf, id=371, 569.12625pt x 569.12625pt>
-File: ./HRSCurves_thnMap.pdf Graphic file (type pdf)
-
-<use ./HRSCurves_thnMap.pdf>
-Package pdftex.def Info: ./HRSCurves_thnMap.pdf used on input line 556.
-(pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
-
-<./HRSCurves_thnDist.pdf, id=372, 569.12625pt x 569.12625pt>
-File: ./HRSCurves_thnDist.pdf Graphic file (type pdf)
-
-<use ./HRSCurves_thnDist.pdf>
-Package pdftex.def Info: ./HRSCurves_thnDist.pdf used on input line 563.
+<use ./Figures/HRData_HitsEventColumn.pdf>
+Package pdftex.def Info: ./Figures/HRData_HitsEventColumn.pdf used on input lin
+e 503.
 (pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[16 <./HRData_qMap.pdf> <./HRData_q_histo.pdf> <./HRData_Hitmap.pdf> <./HRData_
-HitsEvents.pdf>] [17 <./HRData_HitsColumn.pdf> <./HRData_HitsEventColumn.pdf> <
-./HRSCurves_thrMap.pdf> <./HRSCurves_thrDist.pdf>] [18 <./HRSCurves_sigMap.pdf>
- <./HRSCurves_sigDist.pdf> <./HRSCurves_thnMap.pdf> <./HRSCurves_thnDist.pdf>]
-<./CalDel_CalDelScan.pdf, id=916, 569.12625pt x 569.12625pt>
-File: ./CalDel_CalDelScan.pdf Graphic file (type pdf)
+[15 <./Figures/HRData_PHMap.pdf> <./Figures/HRData_ph_histo.pdf>]
+<./Figures/HRSCurves_thrMap.pdf, id=367, 569.12625pt x 569.12625pt>
+File: ./Figures/HRSCurves_thrMap.pdf Graphic file (type pdf)
 
-<use ./CalDel_CalDelScan.pdf>
-Package pdftex.def Info: ./CalDel_CalDelScan.pdf used on input line 584.
-(pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
-
-<./CalDel_Step0.pdf, id=917, 569.12625pt x 569.12625pt>
-File: ./CalDel_Step0.pdf Graphic file (type pdf)
-
-<use ./CalDel_Step0.pdf>
-Package pdftex.def Info: ./CalDel_Step0.pdf used on input line 591.
-(pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
-
-<./CalDel_Step5.pdf, id=918, 569.12625pt x 569.12625pt>
-File: ./CalDel_Step5.pdf Graphic file (type pdf)
-
-<use ./CalDel_Step5.pdf>
-Package pdftex.def Info: ./CalDel_Step5.pdf used on input line 601.
-(pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
-
-<./CalDel_Efficiency.pdf, id=919, 569.12625pt x 569.12625pt>
-File: ./CalDel_Efficiency.pdf Graphic file (type pdf)
-
-<use ./CalDel_Efficiency.pdf>
-Package pdftex.def Info: ./CalDel_Efficiency.pdf used on input line 608.
-(pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
- [19 <./CalDel_CalDelScan.pdf> <./CalDel_Step0.pdf> <./CalDel_Step5.pdf> <./Cal
-Del_Efficiency.pdf>]
-<./Efficiency_Map.pdf, id=1105, 569.12625pt x 569.12625pt>
-File: ./Efficiency_Map.pdf Graphic file (type pdf)
-
-<use ./Efficiency_Map.pdf>
-Package pdftex.def Info: ./Efficiency_Map.pdf used on input line 629.
-(pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
-
-<./Efficiency_BackgroundMap.pdf, id=1106, 569.12625pt x 569.12625pt>
-File: ./Efficiency_BackgroundMap.pdf Graphic file (type pdf)
-
-<use ./Efficiency_BackgroundMap.pdf>
-Package pdftex.def Info: ./Efficiency_BackgroundMap.pdf used on input line 636.
+<use ./Figures/HRSCurves_thrMap.pdf>
+Package pdftex.def Info: ./Figures/HRSCurves_thrMap.pdf used on input line 522.
 
 (pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
 
-<./Efficiency_Overall.pdf, id=1107, 569.12625pt x 569.12625pt>
-File: ./Efficiency_Overall.pdf Graphic file (type pdf)
+<./Figures/HRSCurves_thrDist.pdf, id=368, 569.12625pt x 569.12625pt>
+File: ./Figures/HRSCurves_thrDist.pdf Graphic file (type pdf)
 
-<use ./Efficiency_Overall.pdf>
-Package pdftex.def Info: ./Efficiency_Overall.pdf used on input line 646.
+<use ./Figures/HRSCurves_thrDist.pdf>
+Package pdftex.def Info: ./Figures/HRSCurves_thrDist.pdf used on input line 529
+.
 (pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
 
-<./Efficiency_Fiducial.pdf, id=1108, 569.12625pt x 569.12625pt>
-File: ./Efficiency_Fiducial.pdf Graphic file (type pdf)
 
-<use ./Efficiency_Fiducial.pdf>
-Package pdftex.def Info: ./Efficiency_Fiducial.pdf used on input line 653.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./Figures/HRSCurves_sigMap.pdf, id=369, 569.12625pt x 569.12625pt>
+File: ./Figures/HRSCurves_sigMap.pdf Graphic file (type pdf)
+
+<use ./Figures/HRSCurves_sigMap.pdf>
+Package pdftex.def Info: ./Figures/HRSCurves_sigMap.pdf used on input line 539.
+
+(pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
+
+<./Figures/HRSCurves_sigDist.pdf, id=370, 569.12625pt x 569.12625pt>
+File: ./Figures/HRSCurves_sigDist.pdf Graphic file (type pdf)
+
+<use ./Figures/HRSCurves_sigDist.pdf>
+Package pdftex.def Info: ./Figures/HRSCurves_sigDist.pdf used on input line 546
+.
+(pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./Figures/HRSCurves_thnMap.pdf, id=371, 569.12625pt x 569.12625pt>
+File: ./Figures/HRSCurves_thnMap.pdf Graphic file (type pdf)
+
+<use ./Figures/HRSCurves_thnMap.pdf>
+Package pdftex.def Info: ./Figures/HRSCurves_thnMap.pdf used on input line 556.
+
+(pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
+
+<./Figures/HRSCurves_thnDist.pdf, id=372, 569.12625pt x 569.12625pt>
+File: ./Figures/HRSCurves_thnDist.pdf Graphic file (type pdf)
+
+<use ./Figures/HRSCurves_thnDist.pdf>
+Package pdftex.def Info: ./Figures/HRSCurves_thnDist.pdf used on input line 563
+.
+(pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[16 <./Figures/HRData_qMap.pdf> <./Figures/HRData_q_histo.pdf> <./Figures/HRDat
+a_Hitmap.pdf> <./Figures/HRData_HitsEvents.pdf>] [17 <./Figures/HRData_HitsColu
+mn.pdf> <./Figures/HRData_HitsEventColumn.pdf> <./Figures/HRSCurves_thrMap.pdf>
+ <./Figures/HRSCurves_thrDist.pdf>] [18 <./Figures/HRSCurves_sigMap.pdf> <./Fig
+ures/HRSCurves_sigDist.pdf> <./Figures/HRSCurves_thnMap.pdf> <./Figures/HRSCurv
+es_thnDist.pdf>]
+<./Figures/CalDel_CalDelScan.pdf, id=916, 569.12625pt x 569.12625pt>
+File: ./Figures/CalDel_CalDelScan.pdf Graphic file (type pdf)
+
+<use ./Figures/CalDel_CalDelScan.pdf>
+Package pdftex.def Info: ./Figures/CalDel_CalDelScan.pdf used on input line 584
+.
+(pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
+
+<./Figures/CalDel_Step0.pdf, id=917, 569.12625pt x 569.12625pt>
+File: ./Figures/CalDel_Step0.pdf Graphic file (type pdf)
+
+<use ./Figures/CalDel_Step0.pdf>
+Package pdftex.def Info: ./Figures/CalDel_Step0.pdf used on input line 591.
+(pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
+
+<./Figures/CalDel_Step5.pdf, id=918, 569.12625pt x 569.12625pt>
+File: ./Figures/CalDel_Step5.pdf Graphic file (type pdf)
+
+<use ./Figures/CalDel_Step5.pdf>
+Package pdftex.def Info: ./Figures/CalDel_Step5.pdf used on input line 601.
+(pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
+
+<./Figures/CalDel_Efficiency.pdf, id=919, 569.12625pt x 569.12625pt>
+File: ./Figures/CalDel_Efficiency.pdf Graphic file (type pdf)
+
+<use ./Figures/CalDel_Efficiency.pdf>
+Package pdftex.def Info: ./Figures/CalDel_Efficiency.pdf used on input line 608
+.
+(pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
+ [19 <./Figures/CalDel_CalDelScan.pdf> <./Figures/CalDel_Step0.pdf> <./Figures/
+CalDel_Step5.pdf> <./Figures/CalDel_Efficiency.pdf>] <./Figures/Efficiency_Map.
+pdf, id=1105, 569.12625pt x 569.12625pt>
+File: ./Figures/Efficiency_Map.pdf Graphic file (type pdf)
+
+<use ./Figures/Efficiency_Map.pdf>
+Package pdftex.def Info: ./Figures/Efficiency_Map.pdf used on input line 629.
+(pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
+
+<./Figures/Efficiency_BackgroundMap.pdf, id=1106, 569.12625pt x 569.12625pt>
+File: ./Figures/Efficiency_BackgroundMap.pdf Graphic file (type pdf)
+
+<use ./Figures/Efficiency_BackgroundMap.pdf>
+Package pdftex.def Info: ./Figures/Efficiency_BackgroundMap.pdf used on input l
+ine 636.
+(pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
+
+<./Figures/Efficiency_Overall.pdf, id=1107, 569.12625pt x 569.12625pt>
+File: ./Figures/Efficiency_Overall.pdf Graphic file (type pdf)
+
+<use ./Figures/Efficiency_Overall.pdf>
+Package pdftex.def Info: ./Figures/Efficiency_Overall.pdf used on input line 64
+6.
+(pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
+
+<./Figures/Efficiency_Fiducial.pdf, id=1108, 569.12625pt x 569.12625pt>
+File: ./Figures/Efficiency_Fiducial.pdf Graphic file (type pdf)
+
+<use ./Figures/Efficiency_Fiducial.pdf>
+Package pdftex.def Info: ./Figures/Efficiency_Fiducial.pdf used on input line 6
+53.
 (pdftex.def)             Requested size: 204.85802pt x 204.85924pt.
 
 
@@ -1139,112 +1160,124 @@ Overfull \hbox (8.92914pt too wide) in paragraph at lines 664--665
 
 Underfull \vbox (badness 4752) has occurred while \output is active []
 
- [20 <./Efficiency_Map.pdf> <./Efficiency_BackgroundMap.pdf>]
-<./Xray_NoisePerPixel.pdf, id=1203, 569.0058pt x 711.61862pt>
-File: ./Xray_NoisePerPixel.pdf Graphic file (type pdf)
+ [20 <./Figures/Efficiency_Map.pdf> <./Figures/Efficiency_BackgroundMap.pdf>]
+<./Figures/Xray_NoisePerPixel.pdf, id=1203, 569.0058pt x 711.61862pt>
+File: ./Figures/Xray_NoisePerPixel.pdf Graphic file (type pdf)
 
-<use ./Xray_NoisePerPixel.pdf>
-Package pdftex.def Info: ./Xray_NoisePerPixel.pdf used on input line 677.
+<use ./Figures/Xray_NoisePerPixel.pdf>
+Package pdftex.def Info: ./Figures/Xray_NoisePerPixel.pdf used on input line 67
+7.
 (pdftex.def)             Requested size: 170.71393pt x 213.4981pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./Xray_VcalOffset.pdf, id=1204, 569.12625pt x 711.65875pt>
-File: ./Xray_VcalOffset.pdf Graphic file (type pdf)
+<./Figures/Xray_VcalOffset.pdf, id=1204, 569.12625pt x 711.65875pt>
+File: ./Figures/Xray_VcalOffset.pdf Graphic file (type pdf)
 
-<use ./Xray_VcalOffset.pdf>
-Package pdftex.def Info: ./Xray_VcalOffset.pdf used on input line 681.
+<use ./Figures/Xray_VcalOffset.pdf>
+Package pdftex.def Info: ./Figures/Xray_VcalOffset.pdf used on input line 681.
 (pdftex.def)             Requested size: 170.71393pt x 213.46669pt.
 
-<./Xray_VcalSlope.pdf, id=1205, 569.12625pt x 711.65875pt>
-File: ./Xray_VcalSlope.pdf Graphic file (type pdf)
+<./Figures/Xray_VcalSlope.pdf, id=1205, 569.12625pt x 711.65875pt>
+File: ./Figures/Xray_VcalSlope.pdf Graphic file (type pdf)
 
-<use ./Xray_VcalSlope.pdf>
-Package pdftex.def Info: ./Xray_VcalSlope.pdf used on input line 682.
+<use ./Figures/Xray_VcalSlope.pdf>
+Package pdftex.def Info: ./Figures/Xray_VcalSlope.pdf used on input line 682.
 (pdftex.def)             Requested size: 170.71393pt x 213.46669pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./Xray_Efficiency_50.pdf, id=1206, 569.0058pt x 711.61862pt>
-File: ./Xray_Efficiency_50.pdf Graphic file (type pdf)
+<./Figures/Xray_Efficiency_50.pdf, id=1206, 569.0058pt x 711.61862pt>
+File: ./Figures/Xray_Efficiency_50.pdf Graphic file (type pdf)
 
-<use ./Xray_Efficiency_50.pdf>
-Package pdftex.def Info: ./Xray_Efficiency_50.pdf used on input line 686.
+<use ./Figures/Xray_Efficiency_50.pdf>
+Package pdftex.def Info: ./Figures/Xray_Efficiency_50.pdf used on input line 68
+6.
 (pdftex.def)             Requested size: 170.71393pt x 213.4981pt.
 
-<./Xray_Efficiency_120.pdf, id=1207, 569.0058pt x 711.61862pt>
-File: ./Xray_Efficiency_120.pdf Graphic file (type pdf)
+<./Figures/Xray_Efficiency_120.pdf, id=1207, 569.0058pt x 711.61862pt>
+File: ./Figures/Xray_Efficiency_120.pdf Graphic file (type pdf)
 
-<use ./Xray_Efficiency_120.pdf>
-Package pdftex.def Info: ./Xray_Efficiency_120.pdf used on input line 687.
+<use ./Figures/Xray_Efficiency_120.pdf>
+Package pdftex.def Info: ./Figures/Xray_Efficiency_120.pdf used on input line 6
+87.
 (pdftex.def)             Requested size: 170.71393pt x 213.4981pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21 <./Efficiency_Overall.pdf> <./Efficiency_Fiducial.pdf>]
+[21 <./Figures/Efficiency_Overall.pdf> <./Figures/Efficiency_Fiducial.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22 <./Xray_NoisePerPixel.pdf> <./Xray_VcalOffset.pdf> <./Xray_VcalSlope.pdf>]
- [23 <./Xray_Efficiency_50.pdf> <./Xray_Efficiency_120.pdf>]
-<./Point2.png, id=1360, 314.3745pt x 176.66pt>
-File: ./Point2.png Graphic file (type png)
- <use ./Point2.png>
-Package pdftex.def Info: ./Point2.png used on input line 729.
+ [22 <./Figures/Xray_NoisePerPixel.pdf> <./Figures/Xray_VcalOffset.pdf> <./Figu
+res/Xray_VcalSlope.pdf>] [23 <./Figures/Xray_Efficiency_50.pdf> <./Figures/Xray
+_Efficiency_120.pdf>] <./Figures/Point2.png, id=1360, 314.3745pt x 176.66pt>
+File: ./Figures/Point2.png Graphic file (type png)
+
+<use ./Figures/Point2.png>
+Package pdftex.def Info: ./Figures/Point2.png used on input line 729.
 (pdftex.def)             Requested size: 204.85802pt x 115.12144pt.
 
-<./Point4.png, id=1362, 314.3745pt x 176.66pt>
-File: ./Point4.png Graphic file (type png)
- <use ./Point4.png>
-Package pdftex.def Info: ./Point4.png used on input line 736.
+<./Figures/Point4.png, id=1362, 314.3745pt x 176.66pt>
+File: ./Figures/Point4.png Graphic file (type png)
+
+<use ./Figures/Point4.png>
+Package pdftex.def Info: ./Figures/Point4.png used on input line 736.
 (pdftex.def)             Requested size: 204.85802pt x 115.12144pt.
 
-<./Point5a.png, id=1363, 314.3745pt x 176.66pt>
-File: ./Point5a.png Graphic file (type png)
- <use ./Point5a.png>
-Package pdftex.def Info: ./Point5a.png used on input line 746.
+<./Figures/Point5a.png, id=1363, 314.3745pt x 176.66pt>
+File: ./Figures/Point5a.png Graphic file (type png)
+
+<use ./Figures/Point5a.png>
+Package pdftex.def Info: ./Figures/Point5a.png used on input line 746.
 (pdftex.def)             Requested size: 204.85802pt x 115.12144pt.
 
-<./Point5b.png, id=1364, 314.3745pt x 176.66pt>
-File: ./Point5b.png Graphic file (type png)
- <use ./Point5b.png>
-Package pdftex.def Info: ./Point5b.png used on input line 753.
+<./Figures/Point5b.png, id=1364, 314.3745pt x 176.66pt>
+File: ./Figures/Point5b.png Graphic file (type png)
+
+<use ./Figures/Point5b.png>
+Package pdftex.def Info: ./Figures/Point5b.png used on input line 753.
 (pdftex.def)             Requested size: 204.85802pt x 115.12144pt.
 
-<./Point6.png, id=1365, 314.3745pt x 176.66pt>
-File: ./Point6.png Graphic file (type png)
- <use ./Point6.png>
-Package pdftex.def Info: ./Point6.png used on input line 763.
+<./Figures/Point6.png, id=1365, 314.3745pt x 176.66pt>
+File: ./Figures/Point6.png Graphic file (type png)
+
+<use ./Figures/Point6.png>
+Package pdftex.def Info: ./Figures/Point6.png used on input line 763.
 (pdftex.def)             Requested size: 204.85802pt x 115.12144pt.
 
-<./Point7.png, id=1366, 314.3745pt x 176.66pt>
-File: ./Point7.png Graphic file (type png)
- <use ./Point7.png>
-Package pdftex.def Info: ./Point7.png used on input line 770.
-(pdftex.def)             Requested size: 204.85802pt x 115.12144pt.
+<./Figures/Point7.png, id=1366, 314.3745pt x 176.66pt>
+File: ./Figures/Point7.png Graphic file (type png)
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./Point9a.png, id=1367, 314.3745pt x 176.66pt>
-File: ./Point9a.png Graphic file (type png)
- <use ./Point9a.png>
-Package pdftex.def Info: ./Point9a.png used on input line 780.
-(pdftex.def)             Requested size: 204.85802pt x 115.12144pt.
-
-<./Point9b.png, id=1368, 314.3745pt x 176.66pt>
-File: ./Point9b.png Graphic file (type png)
- <use ./Point9b.png>
-Package pdftex.def Info: ./Point9b.png used on input line 787.
+<use ./Figures/Point7.png>
+Package pdftex.def Info: ./Figures/Point7.png used on input line 770.
 (pdftex.def)             Requested size: 204.85802pt x 115.12144pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[24 <./Point2.png> <./Point4.png> <./Point5a.png> <./Point5b.png>] [25 <./Point
-6.png> <./Point7.png> <./Point9a.png> <./Point9b.png>]
+<./Figures/Point9a.png, id=1367, 314.3745pt x 176.66pt>
+File: ./Figures/Point9a.png Graphic file (type png)
+
+<use ./Figures/Point9a.png>
+Package pdftex.def Info: ./Figures/Point9a.png used on input line 780.
+(pdftex.def)             Requested size: 204.85802pt x 115.12144pt.
+
+<./Figures/Point9b.png, id=1368, 314.3745pt x 176.66pt>
+File: ./Figures/Point9b.png Graphic file (type png)
+
+<use ./Figures/Point9b.png>
+Package pdftex.def Info: ./Figures/Point9b.png used on input line 787.
+(pdftex.def)             Requested size: 204.85802pt x 115.12144pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[24 <./Figures/Point2.png> <./Figures/Point4.png> <./Figures/Point5a.png> <./Fi
+gures/Point5b.png>] [25 <./Figures/Point6.png> <./Figures/Point7.png> <./Figure
+s/Point9a.png> <./Figures/Point9b.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 796--798
 
  []
@@ -1266,58 +1299,65 @@ Underfull \hbox (badness 10000) in paragraph at lines 808--809
 
 [26
 
-] <./dirty.png, id=1403, 2601.72pt x 1951.29pt>
-File: ./dirty.png Graphic file (type png)
- <use ./dirty.png>
-Package pdftex.def Info: ./dirty.png used on input line 838.
+] <./Figures/dirty.png, id=1403, 2601.72pt x 1951.29pt>
+File: ./Figures/dirty.png Graphic file (type png)
+
+<use ./Figures/dirty.png>
+Package pdftex.def Info: ./Figures/dirty.png used on input line 838.
 (pdftex.def)             Requested size: 204.85802pt x 153.63512pt.
 
-<./clean.png, id=1404, 2601.72pt x 1951.29pt>
-File: ./clean.png Graphic file (type png)
- <use ./clean.png>
-Package pdftex.def Info: ./clean.png used on input line 845.
+<./Figures/clean.png, id=1404, 2601.72pt x 1951.29pt>
+File: ./Figures/clean.png Graphic file (type png)
+
+<use ./Figures/clean.png>
+Package pdftex.def Info: ./Figures/clean.png used on input line 845.
 (pdftex.def)             Requested size: 204.85802pt x 153.63512pt.
 
-<./screws1.png, id=1405, 401.5pt x 226.0445pt>
-File: ./screws1.png Graphic file (type png)
- <use ./screws1.png>
-Package pdftex.def Info: ./screws1.png used on input line 855.
+<./Figures/screws1.png, id=1405, 401.5pt x 226.0445pt>
+File: ./Figures/screws1.png Graphic file (type png)
+
+<use ./Figures/screws1.png>
+Package pdftex.def Info: ./Figures/screws1.png used on input line 855.
 (pdftex.def)             Requested size: 204.85802pt x 115.33635pt.
 
-<./screws2.png, id=1406, 401.5pt x 226.0445pt>
-File: ./screws2.png Graphic file (type png)
- <use ./screws2.png>
-Package pdftex.def Info: ./screws2.png used on input line 862.
+<./Figures/screws2.png, id=1406, 401.5pt x 226.0445pt>
+File: ./Figures/screws2.png Graphic file (type png)
+
+<use ./Figures/screws2.png>
+Package pdftex.def Info: ./Figures/screws2.png used on input line 862.
 (pdftex.def)             Requested size: 204.85802pt x 115.33635pt.
 
-<./frontmountplate.png, id=1407, 401.5pt x 226.0445pt>
-File: ./frontmountplate.png Graphic file (type png)
+<./Figures/frontmountplate.png, id=1407, 401.5pt x 226.0445pt>
+File: ./Figures/frontmountplate.png Graphic file (type png)
 
-<use ./frontmountplate.png>
-Package pdftex.def Info: ./frontmountplate.png used on input line 872.
+<use ./Figures/frontmountplate.png>
+Package pdftex.def Info: ./Figures/frontmountplate.png used on input line 872.
 (pdftex.def)             Requested size: 204.85802pt x 115.33635pt.
- <./holder.png, id=1408, 401.5pt x 226.0445pt>
-File: ./holder.png Graphic file (type png)
 
-<use ./holder.png>
-Package pdftex.def Info: ./holder.png used on input line 879.
+<./Figures/holder.png, id=1408, 401.5pt x 226.0445pt>
+File: ./Figures/holder.png Graphic file (type png)
+
+<use ./Figures/holder.png>
+Package pdftex.def Info: ./Figures/holder.png used on input line 879.
 (pdftex.def)             Requested size: 204.85802pt x 115.33635pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./filterholder.png, id=1409, 401.5pt x 225.643pt>
-File: ./filterholder.png Graphic file (type png)
- <use ./filterholder.png>
-Package pdftex.def Info: ./filterholder.png used on input line 886.
+<./Figures/filterholder.png, id=1409, 401.5pt x 225.643pt>
+File: ./Figures/filterholder.png Graphic file (type png)
+
+<use ./Figures/filterholder.png>
+Package pdftex.def Info: ./Figures/filterholder.png used on input line 886.
 (pdftex.def)             Requested size: 204.85802pt x 115.13148pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[27 <./dirty.png> <./clean.png> <./screws1.png (PNG copy)> <./screws2.png (PNG 
-copy)>] [28 <./frontmountplate.png (PNG copy)> <./holder.png (PNG copy)> <./fil
-terholder.png (PNG copy)>]
+[27 <./Figures/dirty.png> <./Figures/clean.png> <./Figures/screws1.png (PNG cop
+y)> <./Figures/screws2.png (PNG copy)>] [28 <./Figures/frontmountplate.png (PNG
+ copy)> <./Figures/holder.png (PNG copy)> <./Figures/filterholder.png (PNG copy
+)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29]
@@ -1370,8 +1410,8 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1553.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1553.
  ) 
 Here is how much of TeX's memory you used:
- 16483 strings out of 493304
- 318341 string characters out of 6139871
+ 16484 strings out of 493304
+ 320111 string characters out of 6139871
  360730 words of memory out of 5000000
  19561 multiletter control sequences out of 15000+600000
  15018 words of font info for 56 fonts, out of 8000000 for 9000
@@ -1389,7 +1429,7 @@ msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 tt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.p
 fb>
-Output written on Xray_Qualification.pdf (40 pages, 58793412 bytes).
+Output written on Xray_Qualification.pdf (40 pages, 58793657 bytes).
 PDF statistics:
  1564 PDF objects out of 1728 (max. 8388607)
  828 compressed objects within 9 object streams
