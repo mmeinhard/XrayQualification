@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.9.27)  9 JAN 2017 11:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.9.27)  9 JAN 2017 18:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1160,223 +1160,242 @@ Overfull \hbox (8.92914pt too wide) in paragraph at lines 664--665
 
 Underfull \vbox (badness 4752) has occurred while \output is active []
 
- [20 <./Figures/Efficiency_Map.pdf> <./Figures/Efficiency_BackgroundMap.pdf>]
-<./Figures/Xray_NoisePerPixel.pdf, id=1203, 569.0058pt x 711.61862pt>
+ [20 <./Figures/Efficiency_Map.pdf> <./Figures/Efficiency_BackgroundMap.pdf>] [
+21 <./Figures/Efficiency_Overall.pdf> <./Figures/Efficiency_Fiducial.pdf>]
+<./Figures/Xray_NoisePerPixel.pdf, id=1300, 569.0058pt x 711.61862pt>
 File: ./Figures/Xray_NoisePerPixel.pdf Graphic file (type pdf)
 
 <use ./Figures/Xray_NoisePerPixel.pdf>
 Package pdftex.def Info: ./Figures/Xray_NoisePerPixel.pdf used on input line 67
-7.
-(pdftex.def)             Requested size: 170.71393pt x 213.4981pt.
+8.
+(pdftex.def)             Requested size: 256.0774pt x 320.258pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./Figures/Xray_VcalOffset.pdf, id=1204, 569.12625pt x 711.65875pt>
-File: ./Figures/Xray_VcalOffset.pdf Graphic file (type pdf)
-
-<use ./Figures/Xray_VcalOffset.pdf>
-Package pdftex.def Info: ./Figures/Xray_VcalOffset.pdf used on input line 681.
-(pdftex.def)             Requested size: 170.71393pt x 213.46669pt.
-
-<./Figures/Xray_VcalSlope.pdf, id=1205, 569.12625pt x 711.65875pt>
-File: ./Figures/Xray_VcalSlope.pdf Graphic file (type pdf)
-
-<use ./Figures/Xray_VcalSlope.pdf>
-Package pdftex.def Info: ./Figures/Xray_VcalSlope.pdf used on input line 682.
-(pdftex.def)             Requested size: 170.71393pt x 213.46669pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./Figures/Xray_Efficiency_50.pdf, id=1206, 569.0058pt x 711.61862pt>
+<./Figures/Xray_Efficiency_50.pdf, id=1303, 569.0058pt x 711.61862pt>
 File: ./Figures/Xray_Efficiency_50.pdf Graphic file (type pdf)
 
 <use ./Figures/Xray_Efficiency_50.pdf>
-Package pdftex.def Info: ./Figures/Xray_Efficiency_50.pdf used on input line 68
-6.
-(pdftex.def)             Requested size: 170.71393pt x 213.4981pt.
+Package pdftex.def Info: ./Figures/Xray_Efficiency_50.pdf used on input line 69
+0.
+(pdftex.def)             Requested size: 204.85802pt x 256.20422pt.
 
-<./Figures/Xray_Efficiency_120.pdf, id=1207, 569.0058pt x 711.61862pt>
+<./Figures/Xray_Efficiency_120.pdf, id=1304, 569.0058pt x 711.61862pt>
 File: ./Figures/Xray_Efficiency_120.pdf Graphic file (type pdf)
 
 <use ./Figures/Xray_Efficiency_120.pdf>
 Package pdftex.def Info: ./Figures/Xray_Efficiency_120.pdf used on input line 6
-87.
-(pdftex.def)             Requested size: 170.71393pt x 213.4981pt.
+97.
+(pdftex.def)             Requested size: 204.85802pt x 256.20422pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21 <./Figures/Efficiency_Overall.pdf> <./Figures/Efficiency_Fiducial.pdf>]
+<./Figures/Xray_VcalOffset.pdf, id=1307, 569.12625pt x 711.65875pt>
+File: ./Figures/Xray_VcalOffset.pdf Graphic file (type pdf)
+
+<use ./Figures/Xray_VcalOffset.pdf>
+Package pdftex.def Info: ./Figures/Xray_VcalOffset.pdf used on input line 712.
+(pdftex.def)             Requested size: 204.85802pt x 256.16437pt.
+
+<./Figures/Xray_VcalSlope.pdf, id=1308, 569.12625pt x 711.65875pt>
+File: ./Figures/Xray_VcalSlope.pdf Graphic file (type pdf)
+
+<use ./Figures/Xray_VcalSlope.pdf>
+Package pdftex.def Info: ./Figures/Xray_VcalSlope.pdf used on input line 719.
+(pdftex.def)             Requested size: 204.85802pt x 256.16437pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[22 <./Figures/Xray_NoisePerPixel.pdf>]
+<./Figures/L1Noise.pdf, id=1323, 569.12625pt x 711.65875pt>
+File: ./Figures/L1Noise.pdf Graphic file (type pdf)
+
+<use ./Figures/L1Noise.pdf>
+Package pdftex.def Info: ./Figures/L1Noise.pdf used on input line 739.
+(pdftex.def)             Requested size: 256.0774pt x 320.22176pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./Figures/Efficiency150.pdf, id=1326, 569.12625pt x 711.65875pt>
+File: ./Figures/Efficiency150.pdf Graphic file (type pdf)
+
+<use ./Figures/Efficiency150.pdf>
+Package pdftex.def Info: ./Figures/Efficiency150.pdf used on input line 751.
+(pdftex.def)             Requested size: 204.85802pt x 256.16437pt.
+
+<./Figures/Efficiency300.pdf, id=1327, 569.12625pt x 711.65875pt>
+File: ./Figures/Efficiency300.pdf Graphic file (type pdf)
+
+<use ./Figures/Efficiency300.pdf>
+Package pdftex.def Info: ./Figures/Efficiency300.pdf used on input line 758.
+(pdftex.def)             Requested size: 204.85802pt x 256.16437pt.
+ [23 <./Figures/Xray_Efficiency_50.pdf> <./Figures/Xray_Efficiency_120.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[24 <./Figures/Xray_VcalOffset.pdf> <./Figures/Xray_VcalSlope.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22 <./Figures/Xray_NoisePerPixel.pdf> <./Figures/Xray_VcalOffset.pdf> <./Figu
-res/Xray_VcalSlope.pdf>] [23 <./Figures/Xray_Efficiency_50.pdf> <./Figures/Xray
-_Efficiency_120.pdf>] <./Figures/Point2.png, id=1360, 314.3745pt x 176.66pt>
+ [25 <./Figures/L1Noise.pdf>] [26 <./Figures/Efficiency150.pdf> <./Figures/Effi
+ciency300.pdf>] <./Figures/Point2.png, id=1483, 314.3745pt x 176.66pt>
 File: ./Figures/Point2.png Graphic file (type png)
 
 <use ./Figures/Point2.png>
-Package pdftex.def Info: ./Figures/Point2.png used on input line 729.
+Package pdftex.def Info: ./Figures/Point2.png used on input line 802.
 (pdftex.def)             Requested size: 204.85802pt x 115.12144pt.
 
-<./Figures/Point4.png, id=1362, 314.3745pt x 176.66pt>
+<./Figures/Point4.png, id=1485, 314.3745pt x 176.66pt>
 File: ./Figures/Point4.png Graphic file (type png)
 
 <use ./Figures/Point4.png>
-Package pdftex.def Info: ./Figures/Point4.png used on input line 736.
+Package pdftex.def Info: ./Figures/Point4.png used on input line 809.
 (pdftex.def)             Requested size: 204.85802pt x 115.12144pt.
 
-<./Figures/Point5a.png, id=1363, 314.3745pt x 176.66pt>
+<./Figures/Point5a.png, id=1486, 314.3745pt x 176.66pt>
 File: ./Figures/Point5a.png Graphic file (type png)
 
 <use ./Figures/Point5a.png>
-Package pdftex.def Info: ./Figures/Point5a.png used on input line 746.
+Package pdftex.def Info: ./Figures/Point5a.png used on input line 819.
 (pdftex.def)             Requested size: 204.85802pt x 115.12144pt.
 
-<./Figures/Point5b.png, id=1364, 314.3745pt x 176.66pt>
+<./Figures/Point5b.png, id=1487, 314.3745pt x 176.66pt>
 File: ./Figures/Point5b.png Graphic file (type png)
 
 <use ./Figures/Point5b.png>
-Package pdftex.def Info: ./Figures/Point5b.png used on input line 753.
+Package pdftex.def Info: ./Figures/Point5b.png used on input line 826.
 (pdftex.def)             Requested size: 204.85802pt x 115.12144pt.
 
-<./Figures/Point6.png, id=1365, 314.3745pt x 176.66pt>
+<./Figures/Point6.png, id=1488, 314.3745pt x 176.66pt>
 File: ./Figures/Point6.png Graphic file (type png)
 
 <use ./Figures/Point6.png>
-Package pdftex.def Info: ./Figures/Point6.png used on input line 763.
+Package pdftex.def Info: ./Figures/Point6.png used on input line 836.
 (pdftex.def)             Requested size: 204.85802pt x 115.12144pt.
 
-<./Figures/Point7.png, id=1366, 314.3745pt x 176.66pt>
+<./Figures/Point7.png, id=1489, 314.3745pt x 176.66pt>
 File: ./Figures/Point7.png Graphic file (type png)
 
 <use ./Figures/Point7.png>
-Package pdftex.def Info: ./Figures/Point7.png used on input line 770.
+Package pdftex.def Info: ./Figures/Point7.png used on input line 843.
 (pdftex.def)             Requested size: 204.85802pt x 115.12144pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./Figures/Point9a.png, id=1367, 314.3745pt x 176.66pt>
+<./Figures/Point9a.png, id=1490, 314.3745pt x 176.66pt>
 File: ./Figures/Point9a.png Graphic file (type png)
 
 <use ./Figures/Point9a.png>
-Package pdftex.def Info: ./Figures/Point9a.png used on input line 780.
+Package pdftex.def Info: ./Figures/Point9a.png used on input line 853.
 (pdftex.def)             Requested size: 204.85802pt x 115.12144pt.
 
-<./Figures/Point9b.png, id=1368, 314.3745pt x 176.66pt>
+<./Figures/Point9b.png, id=1491, 314.3745pt x 176.66pt>
 File: ./Figures/Point9b.png Graphic file (type png)
 
 <use ./Figures/Point9b.png>
-Package pdftex.def Info: ./Figures/Point9b.png used on input line 787.
+Package pdftex.def Info: ./Figures/Point9b.png used on input line 860.
 (pdftex.def)             Requested size: 204.85802pt x 115.12144pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[24 <./Figures/Point2.png> <./Figures/Point4.png> <./Figures/Point5a.png> <./Fi
-gures/Point5b.png>] [25 <./Figures/Point6.png> <./Figures/Point7.png> <./Figure
+[27 <./Figures/Point2.png> <./Figures/Point4.png> <./Figures/Point5a.png> <./Fi
+gures/Point5b.png>] [28 <./Figures/Point6.png> <./Figures/Point7.png> <./Figure
 s/Point9a.png> <./Figures/Point9b.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 796--798
+Underfull \hbox (badness 10000) in paragraph at lines 869--871
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 808--809
+Underfull \hbox (badness 10000) in paragraph at lines 881--882
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 808--809
+Underfull \hbox (badness 10000) in paragraph at lines 881--882
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 808--809
+Underfull \hbox (badness 10000) in paragraph at lines 881--882
 
  []
 
-[26
+[29
 
-] <./Figures/dirty.png, id=1403, 2601.72pt x 1951.29pt>
+] <./Figures/dirty.png, id=1523, 2601.72pt x 1951.29pt>
 File: ./Figures/dirty.png Graphic file (type png)
 
 <use ./Figures/dirty.png>
-Package pdftex.def Info: ./Figures/dirty.png used on input line 838.
+Package pdftex.def Info: ./Figures/dirty.png used on input line 911.
 (pdftex.def)             Requested size: 204.85802pt x 153.63512pt.
 
-<./Figures/clean.png, id=1404, 2601.72pt x 1951.29pt>
+<./Figures/clean.png, id=1524, 2601.72pt x 1951.29pt>
 File: ./Figures/clean.png Graphic file (type png)
 
 <use ./Figures/clean.png>
-Package pdftex.def Info: ./Figures/clean.png used on input line 845.
+Package pdftex.def Info: ./Figures/clean.png used on input line 918.
 (pdftex.def)             Requested size: 204.85802pt x 153.63512pt.
 
-<./Figures/screws1.png, id=1405, 401.5pt x 226.0445pt>
+<./Figures/screws1.png, id=1525, 401.5pt x 226.0445pt>
 File: ./Figures/screws1.png Graphic file (type png)
 
 <use ./Figures/screws1.png>
-Package pdftex.def Info: ./Figures/screws1.png used on input line 855.
+Package pdftex.def Info: ./Figures/screws1.png used on input line 928.
 (pdftex.def)             Requested size: 204.85802pt x 115.33635pt.
 
-<./Figures/screws2.png, id=1406, 401.5pt x 226.0445pt>
+<./Figures/screws2.png, id=1526, 401.5pt x 226.0445pt>
 File: ./Figures/screws2.png Graphic file (type png)
 
 <use ./Figures/screws2.png>
-Package pdftex.def Info: ./Figures/screws2.png used on input line 862.
+Package pdftex.def Info: ./Figures/screws2.png used on input line 935.
 (pdftex.def)             Requested size: 204.85802pt x 115.33635pt.
 
-<./Figures/frontmountplate.png, id=1407, 401.5pt x 226.0445pt>
+<./Figures/frontmountplate.png, id=1527, 401.5pt x 226.0445pt>
 File: ./Figures/frontmountplate.png Graphic file (type png)
 
 <use ./Figures/frontmountplate.png>
-Package pdftex.def Info: ./Figures/frontmountplate.png used on input line 872.
+Package pdftex.def Info: ./Figures/frontmountplate.png used on input line 945.
 (pdftex.def)             Requested size: 204.85802pt x 115.33635pt.
 
-<./Figures/holder.png, id=1408, 401.5pt x 226.0445pt>
+<./Figures/holder.png, id=1528, 401.5pt x 226.0445pt>
 File: ./Figures/holder.png Graphic file (type png)
 
 <use ./Figures/holder.png>
-Package pdftex.def Info: ./Figures/holder.png used on input line 879.
+Package pdftex.def Info: ./Figures/holder.png used on input line 952.
 (pdftex.def)             Requested size: 204.85802pt x 115.33635pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./Figures/filterholder.png, id=1409, 401.5pt x 225.643pt>
+<./Figures/filterholder.png, id=1529, 401.5pt x 225.643pt>
 File: ./Figures/filterholder.png Graphic file (type png)
 
 <use ./Figures/filterholder.png>
-Package pdftex.def Info: ./Figures/filterholder.png used on input line 886.
+Package pdftex.def Info: ./Figures/filterholder.png used on input line 959.
 (pdftex.def)             Requested size: 204.85802pt x 115.13148pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[27 <./Figures/dirty.png> <./Figures/clean.png> <./Figures/screws1.png (PNG cop
-y)> <./Figures/screws2.png (PNG copy)>] [28 <./Figures/frontmountplate.png (PNG
- copy)> <./Figures/holder.png (PNG copy)> <./Figures/filterholder.png (PNG copy
-)>]
+[30 <./Figures/dirty.png> <./Figures/clean.png> <./Figures/screws1.png (PNG cop
+y)> <./Figures/screws2.png (PNG copy)>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[31 <./Figures/frontmountplate.png (PNG copy)> <./Figures/holder.png (PNG copy)
+> <./Figures/filterholder.png (PNG copy)>] [32]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29]
+ [33]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [31]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [32]
-[33] [34]
+ [34]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [35]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [36]
+[36]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [37]
@@ -1384,55 +1403,65 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [39]
-Overfull \hbox (9.60716pt too wide) in paragraph at lines 1531--1533
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41]
+[42] [43]
+Overfull \hbox (9.60716pt too wide) in paragraph at lines 1637--1639
 \OT1/cmr/m/n/12 and use El-Com-man-dante [][]$\OT1/cmtt/m/n/12 https : / / twik
 i . cern . ch / twiki / bin / viewauth / CMS /
  []
 
 
-Overfull \hbox (22.65623pt too wide) in paragraph at lines 1545--1547
+Overfull \hbox (22.65623pt too wide) in paragraph at lines 1651--1653
 \OT1/cmr/m/n/12 nents of mod-ules [][]$\OT1/cmtt/m/n/12 https : / / twiki . cer
 n . ch / twiki / bin / viewauth / CMS / BPixSpecs$[][] 
  []
 
 
-Overfull \hbox (17.1684pt too wide) in paragraph at lines 1547--1549
+Overfull \hbox (17.1684pt too wide) in paragraph at lines 1653--1655
 \OT1/cmr/m/n/12 grade project. [][]$\OT1/cmtt/m/n/12 https : / / twiki . cern .
  ch / twiki / bin / view / CMS / CMSPixelPhase1$[][] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1553.
-[40]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1553.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1659.
+[44]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1659.
  (./Xray_Qualification.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1553.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1553.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1553.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1659.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1659.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1659.
  ) 
 Here is how much of TeX's memory you used:
- 16484 strings out of 493304
- 320111 string characters out of 6139871
- 360730 words of memory out of 5000000
- 19561 multiletter control sequences out of 15000+600000
+ 16520 strings out of 493304
+ 320780 string characters out of 6139871
+ 363723 words of memory out of 5000000
+ 19584 multiletter control sequences out of 15000+600000
  15018 words of font info for 56 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 39i,13n,38p,10429b,981s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-tt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.p
-fb>
-Output written on Xray_Qualification.pdf (40 pages, 58793657 bytes).
+ 39i,16n,45p,10429b,1203s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
+st, replaced by a fixed one
+
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
+>
+Output written on Xray_Qualification.pdf (44 pages, 58923087 bytes).
 PDF statistics:
- 1564 PDF objects out of 1728 (max. 8388607)
- 828 compressed objects within 9 object streams
- 140 named destinations out of 1000 (max. 500000)
- 276 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1697 PDF objects out of 1728 (max. 8388607)
+ 901 compressed objects within 10 object streams
+ 150 named destinations out of 1000 (max. 500000)
+ 291 words of extra memory for PDF output out of 10000 (max. 10000000)
 

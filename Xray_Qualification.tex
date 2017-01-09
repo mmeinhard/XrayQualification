@@ -664,41 +664,114 @@ This test is performed at different rates to measure the efficiency of each ROC.
 The XraySpectrum test is performed with four scintillating targets so that a monochromatic X-ray beam reaches the module. This test enables to establish conversion parameters between a pulse height in ROC internal ADC units and electrons. This conversion is slightly different for all ROCs.
 
 \section{Results}
-\subsection{L2}
-325 modules in total were tested in the X-ray qualification. Out of these, 242 received grade A, 39 grade B and 44 grade C, leading to a yield of 86.5\% (note that modules with severe defects that were discovered in the FQ are not tested in the X-ray qualification and do not appear in the results shown here). 
 
-Most modules graded C in the X-ray qualification are due to DC defects which will be described later.
+This section summarizes the results of X-ray qualifications of both L1 and L2 modules of the 2015-2016 production of the Phase I upgrade of the BPix detector of CMS. 
 
+\subsection{Modules for Layer 2 (L2)}
+311 modules in total were tested in the X-ray qualification. Out of these, 242 received grade A, 39 grade B and 30 grade C, leading to a yield of 90.4\% (note that modules with severe defects that were discovered in the FQ are not tested in the X-ray qualification and do not appear in the results shown here). The total yield goes down to 81.0\% when including results from the FQ.  
 
 \begin{itemize}
 \item Noise:
-The noise of most pixels is unproblematic
-\begin{figure} [h!] \centering 
-\includegraphics[width=0.4\textwidth, angle=0] {./Figures/Xray_NoisePerPixel.pdf}
-\end{figure}
+The noise for every pixel is shown in Figure~\ref{L2Noise}. While the black line corresponds to all pixels, the coloured lines correspond to the grade of the module in which the pixel lies. Here, green is for modules graded A, orange for modules graded B and red for modules graded C. Modules with a detector grade (A or B) have with only very few exceptions pixels with a noise lower than 400 e$^-$. The noise of some pixels has been measured to be up to 900 e$^-$, but those modules were graded C. Most of those pixels can be associated to two modules with different severe defects. Here higher noise was not the main reason for the downgrade of those modules. It can also be seen that the test failed for a minority of pixels which can be recognised by the bin at noise 0e$^-$. This however also only concerns grade C modules and is therefore not problematic.
 
 \begin{figure} [h!] \centering 
-\includegraphics[width=0.4\textwidth, angle=0] {./Figures/Xray_VcalOffset.pdf}
-\includegraphics[width=0.4\textwidth, angle=0] {./Figures/Xray_VcalSlope.pdf}
+\includegraphics[width=0.6\textwidth, angle=0] {./Figures/Xray_NoisePerPixel.pdf}
+\caption{\em  \label{L2Noise}
+Noise of each pixel of layer 2 modules. The green histogram corresponds to pixels on modules graded A, the orange one to modules graded B and the red one to modules graded C. The black line is the sum of all pixels.}
 \end{figure}
 
-\begin{figure} [h!] \centering 
-\includegraphics[width=0.4\textwidth, angle=0] {./Figures/Xray_Efficiency_50.pdf}
-\includegraphics[width=0.4\textwidth, angle=0] {./Figures/Xray_Efficiency_120.pdf}
+\item Efficiency: 
+Figures~\ref{Efficiency50} and \ref{Efficiency120} show the interpolated efficiency per ROC at \SI{50}{\mega\hertz} and at \SI{120}{\mega\hertz}, which is the expected rate for L2 modules. It can be seen that the efficiency globally decreases for higher rates, but that it remains well above 98\% for all ROCs. 
+
+\begin{figure} [h!]
+\centering
+\begin{minipage}{.48\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{./Figures/Xray_Efficiency_50.pdf}
+  \captionof{figure}{Efficiency of all ROCs at \SI{50}{\mega\hertz}. The color designated the grade of the module to which the ROC belongs to. Green stands for grade A, orange for grade B and red for grade C.}
+  \label{Efficiency50}
+\end{minipage}%
+\hspace{2mm}
+\begin{minipage}{.48\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{./Figures/Xray_Efficiency_120.pdf}
+  \captionof{figure}{Efficiency of all ROCs at \SI{120}{\mega\hertz}. The color designated the grade of the module to which the ROC belongs to. Green stands for grade A, orange for grade B and red for grade C.}
+  \label{Efficiency120}
+\end{minipage}
 \end{figure}
+
+
+
+\item Vcal Calibration:
+
+Figures~\ref{Offset} and \ref{Slope} show the offset and the slope of the Vcal calibration for each tested ROC. The distribution of the offsets is centred close to zero as expected. The slope has a mean of around 47$e^{-}$/Vcal independently of the grade of the module. The slope has a spread of about 2.1$e^{-}$/Vcal.
+\begin{figure} [h!]
+\centering
+\begin{minipage}{.48\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{./Figures/Xray_VcalOffset.pdf}
+  \captionof{figure}{Offset of the Vcal calibration. The color designated the grade of the module to which the ROC belongs to. Green stands for grade A, orange for grade B and red for grade C.}
+  \label{Offset}
+\end{minipage}%
+\hspace{2mm}
+\begin{minipage}{.48\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{./Figures/Xray_VcalSlope.pdf}
+  \captionof{figure}{Slope of the Vcal calibration. The color designated the grade of the module to which the ROC belongs to. Green stands for grade A, orange for grade B and red for grade C.}
+  \label{Slope}
+\end{minipage}
+\end{figure}
+
+
 \end{itemize}
 
 
 
-\subsection{L1}
-\subsection{Reasons for failure of the test}
-The X-ray qualification was only performed with modules where no severe problems appeared in the Full Qualification, such as non programmable ROCs. These defects are therefore not listed here, but in the corresponding section on the FQ.
+\subsection{Modules for Layer 1 (L1)}
+
+132 modules in total were tested in the X-ray qualification. Out of these, 97 received grade A, 7 grade B and 28 grade C, leading to a yield of 78.8\% (note that modules with severe defects that were discovered in the FQ are not tested in the X-ray qualification and do not appear in the results shown here). 
+
+\begin{itemize}
+\item Noise:
+The noise for every pixel is shown in Figure~\ref{L1Noise}. While the black line corresponds to all pixels, the coloured lines correspond to the grade of the module in which the pixel lies. Here, green is for modules graded A, orange for modules graded B and red for modules graded C. Here, one can clearly see that the noise for L1 modules is much higher than for L2 modules, the mean noise is at around 350e$^-$, but some pixels have a noise up to 1000e$^-$. Due to this, no grading on the noise is performed for L1 modules.
+
+\begin{figure} [h!] \centering 
+\includegraphics[width=0.6\textwidth, angle=0] {./Figures/L1Noise.pdf}
+\caption{\em  \label{L1Noise}
+Noise of each pixel of layer 1 modules. The green histogram corresponds to pixels on modules graded A, the orange one to modules graded B and the red one to modules graded C. The black line is the sum of all pixels.}
+\end{figure}
+
+\item Efficiency: 
+Figures~\ref{Efficiency150} and \ref{Efficiency300} show the interpolated efficiency per ROC at \SI{150}{\mega\hertz} and at \SI{300}{\mega\hertz}, which is the expected rate for L1 modules. The efficiency at \SI{150}{\mega\hertz} is close to 100\% for all ROCs. The outlier comes from one module with a not yet understood issue on one of the ROCs. At \SI{300}{\mega\hertz}, the efficiency is on average slightly lower than at \SI{50}{\mega\hertz}. Some ROCs however have a higher efficiency which is in some case even larger than 100\%. This can be explained by the fact that these values are extrapolated from a fit on the measured efficiency values for each double-column, and the fit failed in those cases. For a few ROCs, the efficiency is lower than 98\%. 
+
+\begin{figure} [h!]
+\centering
+\begin{minipage}{.48\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{./Figures/Efficiency150.pdf}
+  \captionof{figure}{Efficiency of all ROCs at \SI{150}{\mega\hertz}. The color designated the grade of the module to which the ROC belongs to. Green stands for grade A, orange for grade B and red for grade C.}
+  \label{Efficiency150}
+\end{minipage}%
+\hspace{2mm}
+\begin{minipage}{.48\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{./Figures/Efficiency300.pdf}
+  \captionof{figure}{Efficiency of all ROCs at \SI{300}{\mega\hertz}. The color designated the grade of the module to which the ROC belongs to. Green stands for grade A, orange for grade B and red for grade C.}
+  \label{Efficiency300}
+\end{minipage}
+\end{figure}
+\end{itemize}
+
+\subsection{Reasons for downgraded modules}
+This section only lists defects which were observed during the X-ray qualification. Only the three most important reasons are presented here. The list of grading criteria are shown in Appendix~\ref{Grading}.
+
 \subsubsection{Double-column defects}
-Most of the modules failing the X-ray qualification are caused by a defective double-column on one or multiple ROCs. The problem is particularly noticeable for L1 modules (give percentages). The characteristics of these defects are very different. For some modules it can be noticed either on the hitmaps, or when calibrate signals are used, or sometimes also for both. These defects can sometimes also be recognized by an electrical DC test that verifies the functionality of data and timestamp buffers, but this is not the case for all modules. 
-\subsection{BB defects}
-Modules with too many BB defects also fail the X-ray qualification. These are usually already seen in the full qualification
-\subsection{Other problems}
-Though no module during the 2015/2016 production was downgraded due to this, the automatic grading in MoReWeb also considers the noise measured while exposing the module to radiation (only for L2), and the efficiency at the maximum expected rate for the corresponding layer. 
+Most of the modules failing the X-ray qualification fail due to one or in a few cases two defective double-columns (DCs) on one or multiple ROCs. 16 (5\%) L2 modules and 22 (17\%) L1 modules have such problems with defective DCs. This high percentage for L1 was already reduced by introducing an electrical DC test in the wafer test which already sorted out a large fraction of ROCs with DC problems. Various types of DC defects have been observed. For some modules it can be noticed either on the hitmaps, or when calibrate signals are used, or sometimes also for both. For some modules, these defects can be associated to defective timestamp or data buffers, but this is not the case for all modules. Other cases include address decoding issues that only appear when all pixels are enabled at the same time.
+\subsubsection{Bump bonding defects}
+Another reason of failure is the number of bad bump bonds (BB) which means that the connection between the read-out chip and the sensor is broken. This concerns 5 L2 and 2 L1 modules. Furthermore, 37 L2 modules are downgraded to B due to a bad BB quality. In order to further constrain the number of bad bump bonds, no module with more than 200 BB defects was selected to be installed in the detector.
+\subsubsection{Defective HDI}
+Six L2 modules were rejected due to a defective batch of HDIs which were used for those modules. For these HDI, the resistance of the groundline was too high, such that the delivered analog current for ROCs further away from the TBM is not sufficient for operation. This issue should not appear again as this is now tested in the HDI qualification.
+
 
 \begin{appendices}
 %\appendix
@@ -887,6 +960,39 @@ Beryllium is poisonous when in contact with skin and VERY brittle! Note that the
 \caption{\em  \label{filterholder} 
 Filter and its casing.}
 \end{figure}
+
+
+\section{Grading criteria for L1 and L2 modules X-ray qualification} \label{Grading}
+
+After the X-ray qualification, a grade A, B or C is assigned to every ROC on a module, where A are almost perfect ROCs, B are ROCs with some minor defects that can still be used in the detector, and C are ROCs which are not to be installed. The global module grade is the worst of the grades of all the ROCs on the module. A ROC can be downgraded either due to one of its performance parameters or due to a too high number of defective pixels. When more than 42 pixels on a ROC are defective, the ROC is graded B, if there are more than 168, it is graded C. The performance parameters leading to a downgrade are shown in Table~\ref{performanceparameters} and the reasons for a pixel being defective in Table~\ref{defectivepixel}.
+
+\begin{table}[h!]
+\centering
+\caption{Performance parameters of a ROC leading to a downgrade}
+\label{performanceparameters}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+                                             & B & C \\ \midrule
+Average noise \footnote{only for L2 modules} [e$^{-}$] & $>300$   &  $>400$ \\
+Efficiency 120/300 MHz/cm2   &  $>98\%$  & $>95\%$ \\
+Column uniformity problems &  - & $\geq 1$ \\
+Readout uniformity problems &  -  & $\geq 1$ \\ \bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}[h!]
+\centering
+\caption{List of reasons for a defective pixel.}
+\label{defectivepixel}
+\begin{tabular}{@{}lc@{}}
+\toprule
+                                            & defective pixel if: \\ \midrule
+Bump defects  &  pixel is alive but no hits in hitmap \\
+Noise [e$^{-}$] & $>$400 \\
+Hot pixel & can't be re-trimmed and has to be masked \\ \bottomrule
+\end{tabular}
+\end{table}
 
 \section{ElCommandante configuration files}  \label{Config}
 The only files that need to be modified are the config/elComandante.conf and the config/elComandante.ini files. The first of those is used to indicate which port is occupied by the different devices steered by elCommandante. In the second one, one should indicate details about which tests to execute and under which conditions (temperature, X-ray hit rate).
