@@ -69,21 +69,21 @@ The ETH pixel group is equipped with a Seifert X-ray tube which has been used fo
 \end{figure}
 
 \section{Operation of the X-ray setup}  \label{Xraysetup}
-The test setup (see Figure \ref{Setup}) is centred around an X-ray tube that has a chromium (Cr) anode. The radiation produced by the tube can either be used directly to obtain high particle rates or directed towards one of five metallic targets that produce a monochromatic but less energetic beam. The available targets are Iron (Fe), Copper (Cu), Molybdenum (Mo), Silver (Ag) and Tin (Sn). \\
-Samples can be tested in a climatic chamber where air humidity is kept low and which can be cooled down to a desired temperature (up to -15$^\circ$C to -20$^\circ$C depending on the state of the Peltier elements and the water flux used for cooling). \\
+The test setup (see Figure \ref{Setup}) is centred around an X-ray tube which has a chromium (Cr) anode. The radiation produced by the tube can either be used directly to obtain high photon rates or directed towards one of five metallic targets that produce a monochromatic but less energetic beam. The available targets are Iron (Fe), Copper (Cu), Molybdenum (Mo), Silver (Ag) and Tin (Sn). \\
+Samples are tested in a climatic chamber where air humidity is kept low and which can be cooled down to a desired temperature (up to -15$^\circ$C to -20$^\circ$C depending on the state of the Peltier elements and the water flux used for cooling). \\
 A Keithley power supply is allocated to the setup which is used to provide a depletion voltage to the modules. \\
 A PC is available for the execution of tests.
 
 \begin{figure} [h!] \centering
 \includegraphics[width=\textwidth, angle=0] {./Figures/Setup.jpg}
 \caption{\em  \label{Setup}
-Picture of the X-ray testing setup including the X-ray tube, the control for the climatic chamber, the Keithley, the computer and the water supplies.}
+Picture of the X-ray testing setup including the X-ray tube, the control for the climatic chamber, the Keithley, the PC and the water supplies.}
 \end{figure}
 
 
 \subsection{Operation of the X-ray tube} \label{Operation}
 
-One should be cautious when operating the X-ray tube since it produces highly energetic photons which can be harmful. 
+One should be cautious when operating the X-ray tube since it produces highly energetic photons which can be harmful. A regulation describing the risks of using the X-ray setup can be found in Appendix~\ref{Regulation} and should be read and signed by every user of the setup.
 
 \begin{itemize}
 \item {Open valve entirely for X-ray cooling (3 on Figure \ref{Water}).
@@ -109,34 +109,35 @@ Picture of the command board which enables to operate the X-ray tube and the cli
 Detailed picture of the control panel of the X-ray tube generator.}
 \end{figure}
 }
-\item{Warm up X-ray tube by selecting \textbf{F7}. Enter the required current and voltage settings by selecting \textbf{F2, F4 or F6}. One shouldn't have very small values for currents with large voltages as well as the other way around. Suggested values are \SI{60}{\kV} and \SI{30}{\mA} for warming up the tube. Press \textbf{Enter} when finished, then \textbf{START} (square green one, 5 on Figure~\ref{Xray}). This will take up to 30 minutes depending on when the tube was operated the last time at this or a higher voltage. If the voltage is not set, check green interlock button (4) and the door, press \textbf{CL} to delete the error message.}
-\item {To control X-ray tube settings during operation, use the \textbf{id3003} which is installed on the computer. With this, the X-ray generator can be shut on and off, the voltage and current settings can be adjusted, and the shutter opened and closed. Shutter 1 directs the beam to the targets, shutter 3 directs it directly to the modules. Some examples:
+\item{Warm up X-ray tube by selecting \textbf{F7}. Enter the required current and voltage settings by selecting \textbf{F2, F4 or F6}. One shouldn't operate the tube with very small currents and large voltages as well as the other way around. Suggested values are \SI{60}{\kV} and \SI{30}{\mA} for warming up the tube. Press \textbf{Enter} when finished, then \textbf{START} (square green one, 5 on Figure~\ref{Xray}). This will take up to 30 minutes depending on when the tube was last operated at this or a higher voltage. If the voltage is not set, check green interlock button (4 on Figure~\ref{Commandboard}) and the door and press \textbf{CL} to delete the error message.}
+\item {To control X-ray tube settings during operation, use the \textbf{id3003} programme which is installed on the PC. With this, the X-ray generator can be switched on and off, the voltage and current settings can be adjusted, and the shutters opened and closed. Shutter 1 directs the beam to the targets, shutter 3 directs it to the modules. Some examples:
 \\
 \\
 \begin{Verbatim}[frame=single]
-id3003.py open shutter 1
-id3003.py close shutter 1
-id3003.py set hv on
-id3003.py set hv off
-id3003.py set voltage 30
-id3003.py set current 10
-id3003.py get voltage
-id3003.py get current
+$ id3003.py open shutter 1
+$ id3003.py close shutter 1
+$ id3003.py set hv on
+$ id3003.py set hv off
+$ id3003.py set voltage 30
+$ id3003.py set current 10
+$ id3003.py get voltage
+$ id3003.py get current
 \end{Verbatim}
 }
-\item{When taking a break, turn off high voltage and close the shutter. Turn key to \textbf{STAND BY}.}
+\item{When taking a break, close the shutter and turn off high voltage. Turn key to \textbf{STAND BY}.}
 \end{itemize}
 After use, turn off the setup as follows:
 \begin{itemize}
-\item {Close the shutter, turn off high voltage.}
+\item {Close the shutter, turn off the high voltage.}
 \item {Press \textbf{STOP} (6 on Figure~\ref{Xray}).}
 \item {Turn key to \textbf{OFF}.}
-\item {Turn off X-ray machine.}
+\item {Turn off X-ray machine (3 on Figure~\ref{Commandboard}).}
 \item {Close water valve.}
 \end{itemize}
+
 \subsection{Targets for monochromatic X-ray beam}
 
-The setup is equipped with a movable holder that holds five metallic plates used to create a monochromatic beam. 
+The setup is equipped with a movable holder that holds five metallic targets used to create a monochromatic beam. 
 
 \begin{figure} [h!] \centering 
 \includegraphics[width=0.9\textwidth, angle=0] {./Figures/Targets.jpg}
@@ -145,23 +146,24 @@ Picture of the target holder and the two shutters of the X-ray beam.}
 \end{figure}
 
 \begin{itemize}
-\item {To change the target during operation, the \textbf{xrf} program is needed.  Available targets are Zn, Cu, Mo, Ag, Sn. Some examples:
+\item {To change the target during operation, the \textbf{xrf} programme is needed.  Available targets are Zn, Cu, Mo, Ag, Sn. Some examples:
 \begin{Verbatim}[frame=single]
-xrf Ag
-xrf Mo
-xrf Screen
+$ xrf Ag
+$ xrf Mo
+$ xrf Sn
+$ xrf Screen
 \end{Verbatim}
 }
 \end{itemize}
 
 \subsection{Climatic chamber}
 
-The climatic chamber creates an temperature and humidity controlled environment to test modules. The chamber is continuously flushed with dry nitrogen to keep the humidity low. Six Peltier elements \footnote{Type C2-50-1514 from \url{www.tellurex.com}} are used to cool down the chamber to up to -20$^\circ$C.
+The climatic chamber creates an temperature and humidity controlled environment to test modules. The chamber is continuously flushed with dry air to keep the humidity low. Six Peltier elements \footnote{Type C2-50-1514 from \url{www.tellurex.com}} are used to cool down the chamber to up to -20$^\circ$C.
 
 \begin{itemize}
-\item Open valve for module cooling (2 on Figure~\ref{Water}) until the pressure is about \SI{2}{\bar} (check with left barometer in the X-ray setup). The water pressure is relevant as the minimum temperature to which the box can be cooled down to depends on it. 
+\item Open valve for climatic chamber cooling (2 on Figure~\ref{Water}) until the pressure is about \SI{2}{\bar} (check with left barometer in the X-ray setup). The water pressure is relevant as the minimum temperature to which the chamber can be cooled down to depends strongly on it. 
 \item Switch on cooling with the \textbf{ON/OFF} button
-\item Choose setpoint by pressing button \textbf{SETPOINT} while turning the knob at the same time.
+\item Choose set point by pressing the \textbf{SETPOINT} button while turning the knob at the same time until the desired temperature is reached.
 \item After use turn the cooling off by pressing the \textbf{ON/OFF} button and closing the water valve.
 \end{itemize}
 
@@ -175,17 +177,17 @@ Picture of the Keithley power supply.}
 \end{figure}
 \begin{itemize}
 \item Turn on Keithley by pressing 1 on Figure~\ref{Keithley}.
-\item Choose desired bias voltage with the buttons marked in blue on Figure~\ref{Keithley}.
-\item Apply bias voltage to module by pressing button 2 on Figure~\ref{Keithley}.
+\item Choose the desired bias voltage with the buttons marked in blue on Figure~\ref{Keithley}.
+\item Apply bias voltage to the module by pressing 2 on Figure~\ref{Keithley}.
 \end{itemize}
 
 \subsection{Troubleshooting}
-Here are some issues that can occur during the use of the X-ray setup and a solution:
+Here are some issues that can occur during the use of the X-ray setup:
 \begin{itemize}
-\item Door of the X-ray setup is not closed properly: "Emergency stop" appears on the display when one tries to start the tube. Make sure to properly close the door and to press green \textbf{START} button (4) before retrying.
-\item Climatic chamber is not reaching low temperatures. Try adjusting the water flow. If this does not help, one or several Peltier elements might be faulty. Replace them using the description in Appendix~\ref{Peltier}.
-\item Error message saying that the water flow is too low. If it was forgotten to open the water valve, do this and start over. Otherwise, the flow is too low due to dirty filters. Check external filter on the wall (2 on Figure~\ref{Water}) first which is easier to clean. Unscrew and clean the filter with water and dry air. If this does not solve the issue, one needs to clean the built-in filter in the X-ray tube casing. This is a very delicate operation due to the sensitive berillium windows in the tube. This should only be performed by someone who has done this before. Instructions for it can be found in Appendix~\ref{Filter}.
-\item Targets do not move. Scroll the targets to the "back" position manually.
+\item \textbf{Door of the X-ray setup is not closed properly: "Emergency stop" appears on the display when one tries to start the tube.} Make sure to properly close the door and to press the green \textbf{START} button (4 on Figure~\ref{Commandboard}) before retrying.
+\item \textbf{Climatic chamber is not reaching low temperatures.} Try adjusting the water flow. If this does not help, one or several Peltier elements might be faulty. Replace them using the description in Appendix~\ref{Peltier}.
+\item \textbf{Error message saying that the water flow is too low.} If it was forgotten to open the water valve, do this and start over. Otherwise, the flow is too low due to dirty filters. Check external filter on the wall (2 on Figure~\ref{Water}) first which is easier to clean. Unscrew and clean the filter with water and dry air. If this does not solve the issue, one needs to clean the built-in filter in the X-ray tube casing. This is a very delicate operation due to the sensitive berillium windows in the tube. It should only be performed by an experienced person who has done this before. Instructions can be found in Appendix~\ref{Filter}.
+\item \textbf{Targets do not move.} Scroll the targets to the "back" position manually.
 \item X-ray tube in December 2016 is at the end of its lifetime, so it will likely stop working in the near future. The ETH pixel group is in possession of a replacement tube. Appendix~\ref{Filter} explains how to access to the tube for it to be exchanged. 
 \end{itemize}
 
@@ -197,13 +199,13 @@ The setup for testing L1 and L2 modules differs slightly. It is possible to test
 \begin{figure} [h!] \centering 
 \includegraphics[width=0.9\textwidth, angle=0] {./Figures/Material.jpg}
 \caption{\em  \label{Material}
-Picture of the material needed for L1 and L2 modules. 1 is the module adapter for L2 modules, 2 the adapter card for L2 modules, 3 the module adapter for L1 modules, 4 the Digital TestBoard, 5 the LEMO cable, 6 the flatband cable.}
+Picture of the material needed for testing L1 and L2 modules. 1 is the module adapter for L2 modules, 2 the adapter card for L2 modules, 3 the module adapter for L1 modules, 4 the Digital TestBoard, 5 the LEMO cable, 6 the flatband cable.}
 \end{figure}
 
 In addition to the components of the setup listed above, the material needed for the qualification consists of:
 
 \begin{itemize}
-\item One Digital TestBoards (DTBs) including power and USB cable per module
+\item One Digital TestBoard (DTB) including power and USB cable per module
 \item One flatband cable and module connector (L1 or L2) per module
 \item One insert card for each L2 module
 \item 1 LEMO cable per module connecting the Keithley to the DTB
@@ -228,70 +230,70 @@ In addition to the components of the setup listed above, the material needed for
 \end{figure}
 
 Two L1 modules fit in the climatic chamber. Figure~\ref{L1test} shows their orientation.
-Four L2 modules can be positioned with the available fixations in the climatic chamber as can be seen in Figure~\ref{L2test}.The modules need to be placed under the window covered with aluminium foil
-Note that the modules should be placed underneath the window in the cover of the climatic chamber which is covered with aluminium foil. 
+Four L2 modules can be positioned with the available fixations in the climatic chamber as can be seen in Figure~\ref{L2test}. Note that the modules should be placed underneath the window in the door of the climatic chamber which is covered with aluminium foil. 
 
 \section{Programs used for the qualification}
 
-The testing of L1 and L2 has been almost completely automatized. For this, three different softwares are used. The tests are performed with \textbf{pXar}, \textbf{elCommandante} operates the different components of the setup and \textbf{MoReWeb} analyses the results of the qualification. Links to code and information to the software can be found in Appendix~\ref{Links}.
+The testing of L1 and L2 has been almost completely automatized. For this, three different software are used. The tests are performed with \textbf{pXar}, \textbf{elCommandante} operates the different components of the setup and \textbf{MoReWeb} analyses the results of the qualification. Links to the code and information to the software can be found in Appendix~\ref{Links}.
 
 \subsection{pXar}
 
-\textbf{pXar} is the software that communicates with the modules via the DTB. All tests needed for the X-ray qualification are implemented in the software. In order to start \textbf{pXar}, one needs to specify a folder that contains start parameters for the module. These include DAC settings for every ROC, trimbit settings for each pixel, TBM settings as well as other files containing for example information on the test parameters. More details on these files can be found in Appendix~\ref{pxarstartparameters}.
+\textbf{pXar} is the software that communicates with the modules via the DTB. All tests needed for the X-ray qualification are implemented in this software. In order to start \textbf{pXar}, one needs to specify a folder that contains start parameters for the module. These include DAC settings for every ROC, trimbit settings for each pixel, TBM settings as well as other files containing for example information on the test parameters. More details on these files can be found in Appendix~\ref{pxarstartparameters}.
 
 \subsection{MoReWeb}
 
-\textbf{MoReWeb} is a software that analyses the results of the X-ray qualification and which produces an html file displaying the characteristics of the module. Furthermore it automatically assigns a grade to the module based on the defined grading criteria. 
+\textbf{MoReWeb} is a software that analyses the results of the X-ray qualification and which produces an \textit{.html} file displaying the characteristics of the module. Furthermore it automatically assigns a grade to the module based on the defined grading criteria. 
 
 
 \subsection{elCommandante}
 
 In order to automatize the testing, a software named \textbf{elCommandante} was developed. It is able to stir all devices including the X-ray tube settings, opening and closing the different shutters, switching the targets, and controlling the Keithley in addition to starting \textbf{pXar} which executes the tests. Since all these settings need to be adapted depending on which test is being executed, \textbf{elCommandante} saves a lot a work in that perspective. Furthermore, the files containing the test results are put by \textbf{elCommandante} into a format that can be analysed directly by \textbf{MoReWeb}. 
 
-The only device that is not controllable with \textbf{elCommandante} is the climatic chamber, so that the test temperature has to be set manually before the test.
+The only device that is not controllable with \textbf{elCommandante} is the climatic chamber, so the temperature has to be set manually before the test.
 
 
 \section{Specific testing conditions for L1 modules}
 
-L1 modules have several problems that prevents using the same qualification procedure than for L2 modules. Since the power consumption of L1 modules is excessively high leading to many read-out errors at low thresholds, the modules are tested at a threshold of Vcal 80 (4000 e$^-$) instead of 35 (1500 e$^-$). 
+L1 modules have several issues that prevents using the same qualification procedure than for L2 modules. 
 
-The noise of the PROC600V2 is quite high when all pixels are unmasked and when exposed to radiation, in particular for the edge and corner pixels, which size is twice or four times the usual pixel size. This is why the two corner pixels 0,79 and 51,79 are masked for every ROC. Otherwise, the high noise of those pixels handicaps the entire readout of the ROC. In addition to this, the threshold of all other edge pixels is increased even further than the 80 Vcals. Furthermore, no grading on the noise of L1 modules is applied.
+Since the power consumption of L1 modules is excessively high at low thresholds leading to many read-out errors, the modules are tested at a threshold of Vcal 80 (4000 e$^-$) instead of 35 (1500 e$^-$). 
 
-Due to this high threshold and because the ADC response of the pulse hight is not stable under rate, the Vcal Calibration is not performed for the modules. 
-It would be possible to get an approximative calibration by trimming the module to a lower threshold and masking every second row and every second column to limit the noise. Then, the PH calibration algorithm would have to be rewritten such that it takes into account the jumps in the ADC. This jump is more important for uneven rows, so it is recommended to mask those.
+The noise of the PROC600V2 is quite high when all pixels are unmasked and when exposed to radiation, in particular for the edge and corner pixels, which size is twice or four times the usual pixel size. This is why the two corner pixels 0,79 and 51,79 are masked on every ROC. Otherwise, the high noise of those pixels would thwart the entire readout of the module. In addition to this, the threshold of all other edge pixels is increased even further than 80 Vcal. Furthermore, no grading on the noise of L1 modules is applied.
 
-Furthermore, the power consumption of L1 modules is in some cases higher than it can be delivered by the DTB when measuring the efficiency at \SI{400}{\mega\hertz\per\centi\meter\square}. This leads to a high number of read-out errors in that test. In such cases, one can remove the test from the test folder. In situ, the power supplies can deliver more power than the DTB such that it should not be an issue for operation. 
+Due to this high threshold and because the ADC response of the pulse hight is not stable when exposed to radiation, the Vcal Calibration is not performed for the modules. 
+It would be possible to get an approximative calibration by trimming the module to a lower threshold and masking every second row and every second column to limit the noise. Then, the PH calibration algorithm would have to be rewritten such that it takes into account the jumps in the ADC. This jump seems more important for uneven rows, so it is recommended to mask those.
+
+Furthermore, the power delivered by the DTB is in some cases not enough when measuring the efficiency at \SI{400}{\mega\hertz\per\centi\meter\square} of L1 modules. This leads to a high number of read-out errors in that test. In such cases, one can remove the test from the test folder. In the CMS detector, the power supplies can deliver more power than the DTB such that it should not be an issue for operation. 
 
 
 \section{Performing the X-ray qualification}
 
-This section describes the steps of an X-ray qualification, from the setting up of all needed configuration files to the handling of the devices. 
+This section describes the steps required to perform an X-ray qualification, from the setting up of all needed configuration files to the handling of the devices. 
 
 \subsection{Starting the X-ray qualification}
 
-\subsubsection{Start the necessary devices}
+\subsubsection{Staring the necessary devices}
 
 \begin{itemize}
 \item Put the modules to be tested (up to 4 L2 or 2 L1 modules) in the X-ray setup as described above.
 \item Execute points 1 to 5 from Section~\ref{Xraysetup}.
-\item Turn on Keithley (only button 1).
+\item Turn on Keithley (only button 1 on Figure~\ref{Keithley}).
 \item Turn on climatic chamber and set the cooling to 17$^{\circ}$.
 \item Verify that all DTBs are powered.
 \end{itemize}
 
 \subsubsection{Setup directory for start parameters}
 
-In order to start the qualification, pxar needs configuration parameters for the module. These can be copied from the \testname{FullTest}@17 from the FQ. With these, it is not necessary to trim the module again and to optimize its pulse height which saves time.
+In order to start the qualification, pxar needs configuration parameters for the module. They can be copied from the Fulltest at 17$^\circ$C from the Full Qualification (FQ). With these, it is not necessary to trim the module and to optimize its pulse height again which saves time.
 
 To prevent having too large files containing the results of the qualification, one can remove unneeded .root and .log files from the FQ. For instance, one can use the script \textbf{python ./clean\_parameters\_folder.py -d Mxxx} which is located in the home directory of the \textit{production} user. Mxxx designates the module name. \\
 
-Examples for the elCommandante.ini and elCommandante.conf files for L1 and L2 module qualification can be found in Appendix~\ref{Config}.
 
 \subsubsection{elComandante configuration}
 
 \begin{itemize}
-\item Two different versions of elComandante are used for module configuration such that the configuration files do not have to be changed every time for the FQ and the X-ray qualification. Therefore, use the elCommandante version:  \textbf{/home/production/elComandante{\color{Red} Xray}/}
-\item Check the elCommandante.ini and elCommandante.conf files located in the \textbf{/home/production/elComandante{\color{Red} Xray}/config} directory. In particular, verify the test chain in the elCommandante.ini file. This differs for the qualification of L1 and L2 modules. For L2 modules, the test chain should be:
+\item Two different versions of elComandante are used for module configuration such that the configuration files do not have to be changed every time between the FQ and the X-ray qualification. Therefore, use the elCommandante version:  \textbf{/home/production/elComandante{\color{Red} Xray}/}
+\item Check the elCommandante.ini and elCommandante.conf files located in the \textbf{/home/production/elComandante{\color{Red} Xray}/config} directory. In particular, verify the test chain in the elCommandante.ini file. This differs for the qualification of L1 and L2 modules. For L2 modules, the test chain should be
 
 \begin{Verbatim}[frame=single]
 [Tests]
@@ -304,7 +306,7 @@ HREfficiency@200MHz/cm2,HREfficiency@250MHz/cm2}}
 TestDescription = XrayQualification
 \end{Verbatim}
 
-and for L1:
+and for L1
 
 \begin{Verbatim}[frame=single]
 [Tests]
@@ -318,17 +320,19 @@ HREfficiency@300MHz/cm2,HREfficiency@400MHz/cm2}}
 TestDescription = XrayQualification
 \end{Verbatim}
 
-Note that the names of the tests are not the same than the corresponding names in pxar for those tests. This is due to the fact that some modifications are applied to some of those tests in the qualification, such as delays before their execution or saving the acquired DACs. These modifications do not alter the outcome of the tests. 
-Table~\ref{tests} shows which pxar test is executed for each test in the test chain.
+
+
+Note that the names of the tests in the chain are not the same than the corresponding tests in \textbf{pXar}. This is due to the fact that some modifications are applied the tests in the X-ray qualification, such as delays before their execution or saving the acquired DACs. These modifications do not alter the outcome of the tests. 
+Table~\ref{tests} shows which \textbf{pXar} test is executed for each test in the test chain.
 
 
 \begin{table}[]
 \centering
-\caption{Correspondence between test names in ElCommandante and in pxar}
+\caption{Correspondence between test names in \textbf{ElCommandante} and in \textbf{pXar}}
 \label{tests}
 \begin{tabular}{@{}lll@{}}
 \toprule
-ElCommandante test    & pxar test                & Modifications               \\ \midrule
+\textbf{ElCommandante} test    & \textbf{pXar} test                & Modifications               \\ \midrule
 RetrimHotPixel        & trimhotpixels            & 5s delay before test        \\
 HRData                & phrun                    & 5s delay before test        \\
 HRSCurves             & xnoisemaps\footnotemark             &                             \\
@@ -339,12 +343,12 @@ IncreaseEdgeThr       & incedgethr               &                             \
 \end{tabular}
 \end{table}
 
-\footnotetext{Please note that these tests are implemented differently for L1 and L2 module tests. The test procedure remains the same for both types of modules. Tests for L1 modules are found in the XPixelAlive2 tab of pxar and for L2 in the HighRate one. Make necessary modifications in the ./ElCommandanteXray/config/tests/ files.} 
+\footnotetext{Please note that these tests are implemented differently for L1 and L2 module tests. The test procedure remains the same for both types of modules. Tests for L1 modules are found in the XPixelAlive2 tab of \textbf{pXar} and for L2 in the HighRate one. Make the necessary modifications in the \textbf{home/production/ElCommandanteXray/config/tests/} files.} 
 
 
-Furthermore, note that one can specify the testing conditions in these test chains, such as the target used for the XraySpectrum tests and the X-ray hit rate which reflects in different tube settings.
+Furthermore, note that one can specify the testing conditions in the test chain, such as the target used for the \textit{XraySpectrum} tests and the X-ray hit rate which reflects in different X-ray tube settings.
 
-
+Examples of the elCommandante.ini and elCommandante.conf files for L1 and L2 modules X-ray qualification can be found in Appendix~\ref{Config}.
 
 \end{itemize}
 \subsubsection{Starting the qualification}
@@ -353,10 +357,11 @@ Furthermore, note that one can specify the testing conditions in these test chai
 \item Use elComandante from \\
 
 \textbf{/home/production/elComandante{\color{Red} Xray}/elComandante}
+\newpage
 \item Run \begin{verbatim}
 $ ./el\_comandante.py
 \end{verbatim}
-\item Scan modules with scanner from left to right, press enter for an empty position or if the module is the same than in the previous test. Otherwise, the module names can also be inserted manually in the elCommandante.ini file.
+\item Scan modules with scanner from left to right, press enter for an empty position or if the module is the same than in the previous test. The module names can also be inserted manually in the elCommandante.ini file.
 \end{itemize}
 
 
@@ -364,14 +369,17 @@ $ ./el\_comandante.py
 
 \subsubsection{Analysing the data}
 
-These steps summarize the actions needed to finish the X-ray qualification. Steps 4-6 are not necessary but were performed during the 2015-2016 production to keep a good overview of all test results.
+These steps summarize the actions needed to finish the X-ray qualification. Steps 4-6 are not necessary but were performed during the 2015-2016 production to keep track of all test results.
 
 \begin{itemize}
-\item Check the test list in the elComandante output (below "Final cleanup after all tests ..."). The status code should always be 1. A status code of $\neq 1$ or a red color means that a test has failed. 
-\item Copy files from local directory (eg. /usr/local/data/) to a location where all test results are kept. Copying .tar files and extracting them is faster than copying the full uncompressed directory. 
-\item Analyze the tests with MoReWeb.
-\item Update MoReWeb overview on the groups webserver. For this, use the script \textbf{/home/production/synchronize\_webserver.sh}. This might need to be adapted.
-\item Write an Elog entry with the results of the qualification
+\item Check the test list in the \textbf{elComandante} output (below "Final cleanup after all tests ..."). The status code should always be 1. A status code of $\neq 1$ or a red color means that a test has failed. 
+\item Copy files from local directory (eg. /usr/local/data/) to a location where all test results are kept. Copying the \textit{.tar} files and extracting them is faster than copying the full uncompressed directory. 
+\item Analyse the tests with MoReWeb as follows\footnote{Two versions of MoReWeb are installed: \textbf{MoReWeb} and  \textbf{MoReWebL1}. Modify the command as needed. Remember to specify the path to the data directory in the configuration file for \textbf{MoReWeb}.}:
+\begin{verbatim}
+$ ./home/production/MoReWeb/Analyze/Controller.py
+\end{verbatim}
+\item Update MoReWeb overview on our group's webserver. For this, use the script \textbf{/home/production/synchronize\_webserver.sh}. This might need to be adapted.
+\item Write an Elog entry with the results of the qualification.
 \item Upload results to the Pisa database as follows:
 \end{itemize}
 
@@ -390,63 +398,62 @@ scp -P 23481 -i /data/Equipment/labcomputer/eth-pisa-key.rsa
 
 \subsection{Troubleshooting}
 
-\prob{The DTBs are not detected by the computer, typical error message: Unable to detach testboard. USBview is very slow and might or might not list all connected DTBs}
-\sol{Run the script \textbf{/home/production/reset\_usb.sh} (as root) or restart computer (only after agreement from the group).}
-\prob{Hot Pixel Re-trimming takes very long or finds more hot pixels than usual}
-\sol{Might be missing HV or wrong testParameters.dat file (for instance from an old pXar version).}
-\prob{The Keithley is not turned on by elComandante}
-\sol{Check if the \textbf{port} option in section \textbf{keithleyClient} in \textbf{elComandante.conf} is pointing to the correct device. Find the device by running the command \mbox{\textbf{findkeithley}} on production user. This device number can reset after reboot!}
-
+\begin{itemize}
+\item \textbf{The DTBs are not detected by the computer, leading to the typical error message "Unable to detach testboard". USBview is very slow or might not list all connected DTBs}. Run the script \\ \textbf{/home/production/reset\_usb.sh} (as root) or restart the PC (only after agreement from the group).
+\item \textbf{Hot Pixel Re-trimming takes very long or finds more hot pixels than usual.}
+The high voltage might not be applied or a wrong testParameters.dat file (for instance from an old pXar version) is used.
+\item \textbf{The Keithley is not turned on by elComandante.} Check if the \textit{port} option in the section \textit{keithleyClient} in the elComandante.conf file is pointing to the correct device. Find the device by running the command \mbox{\textbf{findkeithley}} on production user. This device number can reset after reboot!
+\end{itemize}
 \section{Description of the tests performed during the X-ray qualification}
 \subsection{Module parametrization}
 At the very beginning of the X-ray qualification, two tests of the Full Qualification are repeated. 
 \begin{itemize}
 \item PixelAlive: Since the module is handled between both qualifications, a PixelAlive test is performed as a quick verification that no major damage occurred during the handling.
-\item GainPedestal: The calibration between PH in ADC units and in Vcal units is also repeated since it is very sensitive to environmental features such as temperature which can change slightly between the setup of the FQ and of the X-ray qualification. It is important that this calibration is accurate as it is used for the Vcal Calibration which will be described later. Since the Vcal calibration is not performed for L1 modules, the GainPedestal test is also omitted for L1 modules.
+\item GainPedestal: The calibration between PH in ADC units and in Vcal units is also repeated since it is very sensitive to environmental features such as temperature which can change slightly between the setups of the FQ and of the X-ray qualification. It is important that this calibration is accurate as it is used for the Vcal Calibration which will be described later. Since the Vcal calibration is not performed for L1 modules, the GainPedestal test is omitted for L1 modules.
 \end{itemize}
 \subsection{Incedgethr - only for L1 modules}
 \subsubsection{Purpose}
-It is known that the corner pixels and edge pixels are much noisier that the inner ones on the PROC600V2. This is why the threshold of those pixels is further increased during before performing tests during which all pixels are enabled.
+It is known that the corner pixels and edge pixels are much noisier that the inner ones on the PROC600V2. This is why the threshold of those pixels is further increased before performing tests during which all pixels are enabled.
 \subsubsection{Methodology}
 This test only affects the edge pixels. The trim bit of those pixels are either increased by 8, or set to 15 if the resulting trim bit would be higher than 15. In addition, the trim bit of the corner pixels is automatically set to 15.
 \subsubsection{Output}
 This test does not produce any output.
 \\
 \\
-All subsequent tests are performed under X-ray radiation.
+\textbf{All subsequent tests are performed under X-radiation.}
 \subsection{Trimhotpixels}
 \subsubsection{Purpose}
 Some pixels become very noisy when the module is exposed to radiation. This is why in this test, noisy pixels are identified and their threshold increased or the pixel masked if the maximum trimbit has been reached.
 \subsubsection{Methodology}
-During this test, the module is exposed to radiation. Hits are accumulated for a given time and a hit map is acquired. After this, the measured hit rate in each pixel is evaluated and compared to a threshold rate which is set. If the measured rate is higher than that threshold, the trimbit of that pixel is increased by one and the test is repeated either until the pixel is not crossing the threshold any more or until the trimbit value has reached 15. In this case, the pixel is flagged as noisy and masked. 
+During this test, the module is exposed to X-radiation. Hits are accumulated for a given time and a hit map is acquired. After this, the measured hit rate in each pixel is evaluated and compared to a threshold rate which is set. If the measured rate is higher than that threshold, the trimbit of that pixel is increased by one and the test is repeated either until the pixel is not crossing the threshold any more or until the trimbit value has reached 15. In this case, the pixel is flagged as noisy and masked. 
 It is accounted for the different size of the edge pixels in the comparison of the measured rate and the threshold rate.
 \subsubsection{Output}
 Figure \ref{RetrimHotPixels-Hitmap} shows the hit map that was acquired. The pixel colored in red has a X-ray hit rate which is higher than the set threshold and is therefore retrimmed. Figure~\ref{RetrimHotPixels-TrimbitHitmap} confirms that the trim bit value of this pixel has been increased by 8.
 \begin{figure}
 \centering
-\begin{minipage}{.48\textwidth}
+\begin{minipage}[t]{.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{./Figures/RetrimHotPixels_Map.pdf}
-  \captionof{figure}{ROC map of the number of hits acquired per pixel \\}
+  \captionof{figure}{ROC map showing the number of hits acquired per pixel.}
   \label{RetrimHotPixels-Hitmap}
 \end{minipage}%
 \hspace{2mm}
-\begin{minipage}{.48\textwidth}
+\begin{minipage}[t]{.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{./Figures/RetrimHotPixels_TrimBitDiff.pdf}
-  \captionof{figure}{ROC map showing the difference between the original trimbit value and the value set after the test}
+  \captionof{figure}{ROC map showing the difference between the original trimbit value and the value set after the test.}
   \label{RetrimHotPixels-TrimbitHitmap}
 \end{minipage}
 \end{figure}
 
 \subsection{PHrun}
 \subsubsection{Purpose}
-This test aims to verify the readout uniformity of each double column of the module by verifying if the measured hit rate increases as expected with higher X-ray rates and also if the readout is stable over time.
+This test aims to verify the readout uniformity of each column of the module by checking if the measured hit rate increases as expected with higher X-ray rates and also if the readout is stable over time.
 \subsubsection{Methodology}
-This test has all pixels enabled at the same time and acquired a hit map of all incoming X-rays. To prevent the buffers to data and timestamp buffers to overflow which can happen at higher X-ray rates, data acquisition is stopped whenever more than 70\% of the buffers are occupied. Data acquisition is resumed once the data in those buffers has been read out.
+This test has all pixels enabled at the same time and acquires a hit map of all incoming X-rays. To prevent the data and timestamp buffers to overflow which can happen at higher X-ray rates, data acquisition is stopped whenever more than 70\% of the buffers are occupied. Data acquisition is resumed once the data in those buffers has been read out.
 \subsubsection{Output}
 
-Figures~\ref{HRData-PHmap} to \ref{HRData-HitsEventColumn} show the output of the HRData test. Figure \ref{HRData-PHmap} shows the average pulse height of all hits in a double column. Ideally there should not be any visible structure. Figure~\ref{HRData-PHHisto} histograms the pulse height of all recorded X-ray hits in all pixels. Figure~\ref{HRData-Qmap} shows again the average pulse height of all hits per pixel, but the pulse height here is converted to Vcal units. The pulse height of every hit in Vcal units is shown in Figure~\ref{HRData-Qhisto}. Figure~\ref{HRData-Hitmap} shows the amount of X-ray hits per pixel. The read-out uniformity over time is verified in Figure~\ref{HRData-HitsEvent}. One events regroups all hits detected between two triggers, which come every \SI{100}{\kilo\hertz}. This line should therefore be as flat as possible. Figure~\ref{HRData-HitsColumn} shows the number of hits per column. The first and last column is expected to have about twice the number of hits than the other columns since the pixel size of those columns is larger. Otherwise, the number of hits should be similar for all columns, though there can be some fluctuations due to the structure of the HDI which shields some parts of the module more than others. Figure~\ref{HRData-HitsEventColumn} summarizes the information from the two last plots.
+Figures~\ref{HRData-PHmap} to \ref{HRData-HitsEventColumn} show the output of the \textit{phrun} test. Figure \ref{HRData-PHmap} shows the average pulse height of all hits in a pixel. Ideally there should not be any visible structure. Figure~\ref{HRData-PHHisto} histograms the pulse height of all recorded X-ray hits in all pixels. Figure~\ref{HRData-Qmap} shows again the average pulse height of all hits per pixel, but the pulse height here is converted to Vcal units. The pulse height of every hit in Vcal units is shown in Figure~\ref{HRData-Qhisto}. Figure~\ref{HRData-Hitmap} shows the amount of X-ray hits per pixel. The read-out uniformity over time is verified in Figure~\ref{HRData-HitsEvent}. One events regroups all hits detected between two triggers, which come every \SI{100}{\kilo\hertz}. This line should therefore be as flat as possible. Figure~\ref{HRData-HitsColumn} shows the number of hits per column. The first and last column is expected to have about twice the number of hits than the other columns since the pixel size of those columns is larger. Otherwise, the number of hits should be similar for all columns, though there can be some fluctuations due to the structure of the HDI which shields some parts of the module more than others. Figure~\ref{HRData-HitsEventColumn} summarizes the information from the two last plots.
 
 \begin{figure} [h!]
 \centering
@@ -519,25 +526,25 @@ Figures~\ref{HRData-PHmap} to \ref{HRData-HitsEventColumn} show the output of th
 
 \subsection{Xnoisemaps}
 \subsubsection{Purpose}
-This test aims to measure the electrical noise of each pixel. A similar test is performed in the FQ, but here all pixels are enabled and the module is exposed to X-radiation during the test which is not the case in the FQ.
+This test aims to measure the electrical noise of each pixel. A similar test is performed in the FQ, but here all pixels are enabled and the module is exposed to X-radiation during the test which is not the case during the FQ.
 \subsubsection{Methodology}
-This test measured an SCurve for every pixel. To obtain it, a fixed number of test pulses are sent to every pixel and the number of correctly read-out pulses is recorded. This is done for many Vcal values around the threshold. The result is fitted with an error function, and the width around the half maximum is interpreted as the noise of the pixel.
+This test measures an \textit{SCurve} for every pixel. To obtain it, a fixed number of test pulses are sent to every pixel and the number of correctly read-out pulses is recorded. This is done for many Vcal values around the threshold. The result is fitted with an error function, and the width around the half maximum is interpreted as the noise of the pixel.
 \subsubsection{Output}
-While the noise was already measured during the Full Qualification, it is remeasured here since it increases when all pixels are enabled (which is not the case in the FQ) and when the module is exposed to radiation. The noise measurement is performed in a similar way.
+Figure~\ref{HRSCurves-thnMap} shows the threshold of every pixel, which is histogramed in Figure~\ref{HRSCurves-thrDist}. Similarly, the noise per pixel is shown in Figure~\ref{HRSCurves-sigMap} and its distribution in Figure~\ref{HRSCurves-sigDist}. Figures~\ref{HRSCurves-thnMap} and \ref{HRSCurves-thnDist} show the map and the distribution of the "turn-off", which is the point at which the efficiency drop back to less than 50\%. Since no "turn-off" is expected when measuring an \textit{SCurve} as a function of Vcal, the "turn-off" is set at the maximum value of the tested DAC. 
 
 \begin{figure} [h!]
 \centering
 \begin{minipage}{.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{./Figures/HRSCurves_thrMap.pdf}
-  \captionof{figure}{Map showing the measured threshold for every pixel.}
+  \captionof{figure}{Map showing the measured threshold of every pixel.}
   \label{HRSCurves-thrMap}
 \end{minipage}%
 \hspace{2mm}
 \begin{minipage}{.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{./Figures/HRSCurves_thrDist.pdf}
-  \captionof{figure}{Histogram of the threshold of every pixel.}
+  \captionof{figure}{Distribution of the threshold of every pixel.}
   \label{HRSCurves-thrDist}
 \end{minipage}
 \end{figure}
@@ -554,7 +561,7 @@ While the noise was already measured during the Full Qualification, it is remeas
 \begin{minipage}{.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{./Figures/HRSCurves_sigDist.pdf}
-  \captionof{figure}{Histogram of the noise of every pixel.}
+  \captionof{figure}{Distribution of the noise of all pixels.}
   \label{HRSCurves-sigDist}
 \end{minipage}
 \end{figure}
@@ -584,22 +591,22 @@ While the noise was already measured during the Full Qualification, it is remeas
 The efficiency of a ROC is slightly varying with the CalDel DAC. It is therefore optimized before the efficiency measurement.
 
 \subsubsection{Measurement}
-The first step in the optimization of CalDel is to see for which of its values test pulses can be read out (see Figure~\ref{CalDel-Scan}). To this aim, a set number of pulses for every CalDel value are sent to a single pixel, and the number of detected pulses is then read out. The valid range of CalDel values is then all DAC values for which the number of detected test pulses is at least 80\% of the maximum. For safety and to cope with small variations amongst all pixels of a ROC, the lowest and highest CalDel values are excluded. Once the CalDel range has been found, the efficiency is measured for all pixels for a set of CalDel values within that range. Examples are found in Figures~\ref{CalDel-Step0} and \ref{CalDel-Step5} which show a histogram of the efficiency of all pixels for the first and the sixth CalDel that is tested. The efficiency is the fraction of correctly read-out test pulses. The mean efficiency of all pixels is evaluated for every pixel and plotted in a histogram (see Figure~\ref{CalDel-Efficiency}). The final chosen CalDel value is the value of that DAC where the efficiency is highest.
+The first step in the optimization of CalDel is to see for which of its values test pulses can be read out (see Figure~\ref{CalDel-Scan}). To this aim, a set number of test pulses for every CalDel value are sent to a single pixel, and the number of test detected pulses is then read out. The valid range of CalDel values contains all DAC values for which the number of detected test pulses is at least 80\% of the maximum. For safety and to cope with small variations amongst all pixels of a ROC, the lowest and highest CalDel values are excluded. Once the CalDel range has been found, the efficiency is measured for all pixels for a set of CalDel values within that range. Examples are found in Figures~\ref{CalDel-Step0} and \ref{CalDel-Step5} which show a histogram of the efficiency of all pixels for the first and the sixth CalDel that is tested. The efficiency is the fraction of correctly read-out test pulses. The mean efficiency of all pixels is evaluated for every pixel and plotted in a histogram (see Figure~\ref{CalDel-Efficiency}). The final chosen CalDel value is the value of that DAC where the efficiency is highest.
 
 \subsubsection{Output}
 \begin{figure} [h!]
 \centering
-\begin{minipage}{.48\textwidth}
+\begin{minipage}[t]{.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{./Figures/CalDel_CalDelScan.pdf}
-  \captionof{figure}{CalDel scan of ROC 0 \\}
+  \captionof{figure}{CalDel scan of ROC 0. }
   \label{CalDel-Scan}
 \end{minipage}%
 \hspace{2mm}
-\begin{minipage}{.48\textwidth}
+\begin{minipage}[t]{.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{./Figures/CalDel_Step0.pdf}
-  \captionof{figure}{Efficiency of ROC 0 with first tested CalDel}
+  \captionof{figure}{Efficiency of ROC 0 with the first tested CalDel.}
   \label{CalDel-Step0}
 \end{minipage}
 \end{figure}
@@ -609,7 +616,7 @@ The first step in the optimization of CalDel is to see for which of its values t
 \begin{minipage}{.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{./Figures/CalDel_Step5.pdf}
-  \captionof{figure}{Efficiency of ROC 0 with sixth tested CalDel.}
+  \captionof{figure}{Efficiency of ROC 0 with the sixth tested CalDel.}
   \label{CalDel-Step5}
 \end{minipage}%
 \hspace{2mm}
@@ -621,6 +628,7 @@ The first step in the optimization of CalDel is to see for which of its values t
 \end{minipage}
 \end{figure}
 
+\clearpage 
 \subsection{Xpixelalive}
 
 \subsubsection{Purpose}
@@ -629,8 +637,9 @@ This test aims to measure the efficiency of each pixel at a measured pixel hit r
 
 \subsubsection{Measurement}
 
-This test is performed while exposing the module to X-radiation. A fixed number of test pulses are sent to every pixel, and the number of correctly read-out pulses is recorded (see Figure~\ref{Efficiency-Map}). The efficiency is the fraction of test pulses which is read out correctly and is plotted for every pixel in Figure~\ref{Efficiency-Overall}. Due to their larger size and to their usually higher noise, the efficiency of edge pixels is lower for fro a fixed X-ray rate. This is why the fiducial efficiency is also evaluated (see Figure~\ref{Efficiency-Fiducial}). Here
-the efficiency of all pixels which are not on the edge of a ROC is shown. At the same time, X-ray hits are read-out by the module, and the number of hits per pixel are evaluated (see Figure~\ref{Efficiency-Hitmap}). This is needed to evaluated the pixel hit rate at which the efficiency was measured. The calculation is not done by pxar, but by MoReWeb and is explained in section%~\ref{Moreweb}.
+This test is performed while exposing the module to X-radiation. A fixed number of test pulses are sent to every pixel, and the number of correctly read-out pulses is recorded (see Figure~\ref{Efficiency-Map}). The efficiency is the fraction of test pulses which is read out correctly and is plotted for every pixel in Figure~\ref{Efficiency-Overall}. Due to their larger size and to their usually higher noise, the efficiency of edge pixels is lower for a fixed X-ray rate. This is why the fiducial efficiency is also evaluated (see Figure~\ref{Efficiency-Fiducial}). Here
+the efficiency of all pixels which are not on the edge of a ROC is shown. At the same time, X-ray hits are read-out by the module, and the number of hits per pixel are evaluated (see Figure~\ref{Efficiency-Hitmap}). The hit rate at which this efficiency was measured is evaluated by counting the number of X-ray hits recorded, and is corrected for the calculated efficiency. Here, one assumes that the efficiency to detect both kinds of hits is the same which is a sensible assumption since both type of hits go through the same read-out chain of the ROC.
+
 \subsubsection{Output}
 \begin{figure} [h!]
 \centering
@@ -651,14 +660,14 @@ the efficiency of all pixels which are not on the edge of a ROC is shown. At the
 
 \begin{figure} [h!]
 \centering
-\begin{minipage}{.48\textwidth}
+\begin{minipage}[t]{.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{./Figures/Efficiency_Overall.pdf}
   \captionof{figure}{Efficiency distribution of all pixels}
   \label{Efficiency-Overall}
 \end{minipage}%
 \hspace{2mm}
-\begin{minipage}{.48\textwidth}
+\begin{minipage}[t]{.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{./Figures/Efficiency_Fiducial.pdf}
   \captionof{figure}{Efficiency of all pixels in the fiducial region (which excludes all edge pixels).}
@@ -666,7 +675,6 @@ the efficiency of all pixels which are not on the edge of a ROC is shown. At the
 \end{minipage}
 \end{figure}
 
-This test is performed at different rates to measure the efficiency of each ROC. The test sends a set number of calibrate signals to each pixels while the chip is exposed to radiation. Evaluating the fraction of correctly read-out calibrate signals gives the efficiency. The hit rate at which this efficiency was measured is evaluated by counting the number of X-ray hits recorded, and is corrected for the calculated efficiency. Here, one assumes that the efficiency to detect both kinds of hits is the same which is a sensible assumption both type of hits go through the same read-out chain of the ROC.
 
 \section{MoReWeb results of module qualification}
 
@@ -674,26 +682,26 @@ After analysing the test results, \textbf{MoReWeb} produces a webpage with all r
 
 \subsection{Module overview}
 
-This page gives an overview of the most important characteristics of a module. It includes a map of the module showing broken bump bonds, a hit map which shows the number of detected X-ray hits per pixel, maps showing the dead, retrimmed and masked pixels, efficiency maps at different X-ray hit rates and maps showing the noise and the threshold of each pixel. Furthermore a table gives the most important characteristics of every ROC, such as its efficiency, its noise, and its number of defect pixels. Some examples for a good module can be seen in Appendix~\ref{ModuleOverview}.
+This page gives an overview of the most important characteristics of a module. It includes a map of the module showing broken bump bonds, a hit map which shows the number of detected X-ray hits per pixel, maps showing the dead, retrimmed and masked pixels, efficiency maps at different X-ray hit rates and maps showing the noise and the threshold of each pixel. Furthermore a table gives the most important characteristics of every ROC, such as its efficiency, its noise, and its number of defect pixels. Some examples for a good module can be found in Appendix~\ref{ModuleOverview}.
 
-\subsection{Chip}
+\subsection{ROC overview}
 
-In addition to the module overview page, results for each individual chip are shown on a separate page. Here, more information can be found about the efficiency of the chip, its defect pixels, its read out uniformity, and its noise. Some examples of a good module can be seen in Appendix~\ref{ChipOverview}.
+In addition to the module overview page, results for each individual ROC are shown on a separate page. Here, more information can be found about the efficiency of the chip, its defect pixels, its read out uniformity, and its noise. Some examples for a good ROC can be seen in Appendix~\ref{ChipOverview}.
 
 \subsection{Vcal calibration}
 
-Furthermore, MoReWeb provides the results of the Vcal calibration, which is performed for every ROC individually. The calibration is needed to convert the deposited charge which is measured in ROC internal units to electrons. For this, four spectra are acquired with different fluorescent targets during the qualification. Each spectra is fitted with a sum of two Gaussians. One of which is assumed to be the signal, the other corresponds to a Gaussian noise with constant and linear terms. The turn on due to the trimming is also included via an error function. From this fit, the mean of the signal peak is extracted and converted to a Vcal value using the PH calibration. Since the energy is characteristic of each target as the emitted spectra is monochromatic, one can associate the found Vcal value to a number of electrons, which is the deposited energy divided by \SI{3.6}{\electronvolt}. This is because \SI{3.6}{\electronvolt} is the energy needed to create one electron-hole pair in silicon. Finally, the corresponding electron numbers of all four targets are fitted with a straight line in order to get conversion parameters between Vcal values and a number of electrons. Figure~\ref{Spectrum} shows the acquired spectrum by a ROC of one of the monochromatic targets. The red line represents the fit. Figure~\ref{VcalCalibration} shows the calibration between a pulse height in Vcal units and a number of electrons. The four blue dots represent the values found for each target. Furthermore, \textbf{MoReWeb} produces a summary page where the conversion factors of all ROCs are outlined. 
+Furthermore, MoReWeb provides the results of the Vcal calibration, which is performed for every ROC individually. The calibration is needed to convert the deposited charge which is measured in ROC internal units to electrons. For this, four spectra are acquired with different fluorescent targets during the qualification. Each spectra is fitted with a sum of two Gaussians. One of these is assumed to fit the signal, the other corresponding to a Gaussian noise. The turn-on due to the trimming is also included via an error function. From this fit, the mean of the signal peak is extracted and converted to a Vcal value using the PH calibration. Since the energy is characteristic of each target as the emitted spectra is monochromatic, one can associate the found Vcal value to a number of electrons, which is the deposited energy divided by \SI{3.6}{\electronvolt}. This is because \SI{3.6}{\electronvolt} is the energy needed to create one electron-hole pair in silicon. Finally, the corresponding electron numbers of all four targets are fitted with a straight line in order to get conversion parameters between Vcal values and a number of electrons. Figure~\ref{Spectrum} shows the acquired spectrum by a ROC of one of the monochromatic targets. The red line represents the fit. Figure~\ref{VcalCalibration} shows the calibration between a pulse height in Vcal units and a number of electrons. The four blue dots represent the values found for each target. Furthermore, \textbf{MoReWeb} produces a summary page where the conversion factors of all ROCs are outlined. 
 
 \begin{figure} [h!]
 \centering
-\begin{minipage}{.48\textwidth}
+\begin{minipage}[t]{.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{./Figures/Spectrum.pdf}
   \captionof{figure}{Molybdenum spectrum acquired by a ROC. The fit function is shown in red.}
   \label{Spectrum}
 \end{minipage}%
 \hspace{2mm}
-\begin{minipage}{.48\textwidth}
+\begin{minipage}[t]{.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{./Figures/VcalCalibration.pdf}
   \captionof{figure}{Vcal calibration of a ROC.}
@@ -703,7 +711,7 @@ Furthermore, MoReWeb provides the results of the Vcal calibration, which is perf
 
 \section{Results}
 
-This section summarizes the results of X-ray qualifications of both L1 and L2 modules of the 2015-2016 production of the Phase I upgrade of the BPix detector of CMS. An overview of the full production status can be obtained with \textbf{MoReweb} using the command 
+This section summarizes the results of X-ray qualifications of both L1 and L2 modules during the 2015-2016 production of the Phase I upgrade of the BPix detector of CMS. An overview of the full production status can be obtained with \textbf{MoReweb} using the command 
 \begin{verbatim}
 $ ./Controller.py -p
 \end{verbatim}
@@ -713,12 +721,12 @@ $ ./Controller.py -p
 
 \begin{itemize}
 \item Noise:
-The noise for every pixel is shown in Figure~\ref{L2Noise}. While the black line corresponds to all pixels, the coloured lines correspond to the grade of the module in which the pixel lies. Here, green is for modules graded A, orange for modules graded B and red for modules graded C. Modules with a detector grade (A or B) have with only very few exceptions pixels with a noise lower than 400 e$^-$. The noise of some pixels has been measured to be up to 900 e$^-$, but those modules were graded C. Most of those pixels can be associated to two modules with different severe defects. Here higher noise was not the main reason for the downgrade of those modules. It can also be seen that the test failed for a minority of pixels which can be recognised by the bin at noise 0e$^-$. This however also only concerns grade C modules and is therefore not problematic.
+The noise for every pixel is shown in Figure~\ref{L2Noise}. While the black line corresponds to all pixels, the coloured lines correspond to the grade of the module in which the pixel lies. Here, green is for modules graded A, orange for modules graded B and red for modules graded C. Modules with a detector grade (A or B) have with almost only pixels with a noise lower than 400 e$^-$. The noise of some pixels has been measured to be up to 900 e$^-$, but those modules were graded C. Most of those pixels can be associated to two modules with different severe defects. Here higher noise was not the main reason for the downgrade of those modules. It can also be seen that the test failed for a minority of pixels which can be recognised by the bin at noise 0e$^-$. This however also only concerns grade C modules and is therefore not problematic.
 
 \begin{figure} [h!] \centering 
 \includegraphics[width=0.6\textwidth, angle=0] {./Figures/Xray_NoisePerPixel.pdf}
 \caption{\em  \label{L2Noise}
-Noise of each pixel of layer 2 modules. The green histogram corresponds to pixels on modules graded A, the orange one to modules graded B and the red one to modules graded C. The black line is the sum of all pixels.}
+Noise of every pixel of layer 2 modules. The green histogram corresponds to pixels on modules graded A, the orange one to modules graded B and the red one to modules graded C. The black line corresponds to the distribution of all pixels regardless of the grade.}
 \end{figure}
 
 \item Efficiency: 
@@ -729,14 +737,14 @@ Figures~\ref{Efficiency50} and \ref{Efficiency120} show the interpolated efficie
 \begin{minipage}{.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{./Figures/Xray_Efficiency_50.pdf}
-  \captionof{figure}{Efficiency of all ROCs at \SI{50}{\mega\hertz}. The color designated the grade of the module to which the ROC belongs to. Green stands for grade A, orange for grade B and red for grade C.}
+  \captionof{figure}{Efficiency of all ROCs at \SI{50}{\mega\hertz}.}
   \label{Efficiency50}
 \end{minipage}%
 \hspace{2mm}
 \begin{minipage}{.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{./Figures/Xray_Efficiency_120.pdf}
-  \captionof{figure}{Efficiency of all ROCs at \SI{120}{\mega\hertz}. The color designated the grade of the module to which the ROC belongs to. Green stands for grade A, orange for grade B and red for grade C.}
+  \captionof{figure}{Efficiency of all ROCs at \SI{120}{\mega\hertz}.}
   \label{Efficiency120}
 \end{minipage}
 \end{figure}
@@ -751,14 +759,14 @@ Figures~\ref{Offset} and \ref{Slope} show the offset and the slope of the Vcal c
 \begin{minipage}{.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{./Figures/Xray_VcalOffset.pdf}
-  \captionof{figure}{Offset of the Vcal calibration. The color designated the grade of the module to which the ROC belongs to. Green stands for grade A, orange for grade B and red for grade C.}
+  \captionof{figure}{Offset of the Vcal calibration.}
   \label{Offset}
 \end{minipage}%
 \hspace{2mm}
 \begin{minipage}{.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{./Figures/Xray_VcalSlope.pdf}
-  \captionof{figure}{Slope of the Vcal calibration. The color designated the grade of the module to which the ROC belongs to. Green stands for grade A, orange for grade B and red for grade C.}
+  \captionof{figure}{Slope of the Vcal calibration.}
   \label{Slope}
 \end{minipage}
 \end{figure}
@@ -774,30 +782,30 @@ Figures~\ref{Offset} and \ref{Slope} show the offset and the slope of the Vcal c
 
 \begin{itemize}
 \item Noise:
-The noise for every pixel is shown in Figure~\ref{L1Noise}. While the black line corresponds to all pixels, the coloured lines correspond to the grade of the module in which the pixel lies. Here, green is for modules graded A, orange for modules graded B and red for modules graded C. Here, one can clearly see that the noise for L1 modules is much higher than for L2 modules, the mean noise is at around 350e$^-$, but some pixels have a noise up to 1000e$^-$. Due to this, no grading on the noise is performed for L1 modules.
+The noise for every pixel is shown in Figure~\ref{L1Noise}. The same colour code applies than for the Figures concerning L2 modules. Here, one can clearly see that the noise for L1 modules is much higher than for L2 modules, the mean noise is at around 350e$^-$, but some pixels have a noise up to 1000e$^-$. Due to this, no grading on the noise is applied for L1 modules.
 
 \begin{figure} [h!] \centering 
-\includegraphics[width=0.6\textwidth, angle=0] {./Figures/L1Noise.pdf}
+\includegraphics[width=0.56\textwidth, angle=0] {./Figures/L1Noise.pdf}
 \caption{\em  \label{L1Noise}
 Noise of each pixel of layer 1 modules. The green histogram corresponds to pixels on modules graded A, the orange one to modules graded B and the red one to modules graded C. The black line is the sum of all pixels.}
 \end{figure}
 
 \item Efficiency: 
-Figures~\ref{Efficiency150} and \ref{Efficiency300} show the interpolated efficiency per ROC at \SI{150}{\mega\hertz} and at \SI{300}{\mega\hertz}, which is the expected rate for L1 modules. The efficiency at \SI{150}{\mega\hertz} is close to 100\% for all ROCs. The outlier comes from one module with a not yet understood issue on one of the ROCs. At \SI{300}{\mega\hertz}, the efficiency is on average slightly lower than at \SI{50}{\mega\hertz}. Some ROCs however have a higher efficiency which is in some case even larger than 100\%. This can be explained by the fact that these values are extrapolated from a fit on the measured efficiency values for each double-column, and the fit failed in those cases. For a few ROCs, the efficiency is lower than 98\%. 
+Figures~\ref{Efficiency150} and \ref{Efficiency300} show the interpolated efficiency per ROC at \SI{150}{\mega\hertz} and at \SI{300}{\mega\hertz}, which is the expected rate for L1 modules. The efficiency at \SI{150}{\mega\hertz} is close to 100\% for all ROCs. The outlier comes from one module with a not yet understood issue on one of the ROCs. At \SI{300}{\mega\hertz}, the efficiency is on average slightly lower than at \SI{150}{\mega\hertz}. Some ROCs however have a higher efficiency which is in some case even larger than 100\%. This can be explained by the fact that these values are extrapolated from a fit on the measured efficiency values for each double-column, and the fit failed in those cases. For a few ROCs, the efficiency is lower than 98\%. 
 
 \begin{figure} [h!]
 \centering
 \begin{minipage}{.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{./Figures/Efficiency150.pdf}
-  \captionof{figure}{Efficiency of all ROCs at \SI{150}{\mega\hertz}. The color designated the grade of the module to which the ROC belongs to. Green stands for grade A, orange for grade B and red for grade C.}
+  \captionof{figure}{Efficiency of all ROCs at \SI{150}{\mega\hertz}.}
   \label{Efficiency150}
 \end{minipage}%
 \hspace{2mm}
 \begin{minipage}{.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{./Figures/Efficiency300.pdf}
-  \captionof{figure}{Efficiency of all ROCs at \SI{300}{\mega\hertz}. The color designated the grade of the module to which the ROC belongs to. Green stands for grade A, orange for grade B and red for grade C.}
+  \captionof{figure}{Efficiency of all ROCs at \SI{300}{\mega\hertz}.}
   \label{Efficiency300}
 \end{minipage}
 \end{figure}
@@ -807,18 +815,18 @@ Figures~\ref{Efficiency150} and \ref{Efficiency300} show the interpolated effici
 This section only lists defects which were observed during the X-ray qualification. Only the three most important reasons are presented here. The list of grading criteria are shown in Appendix~\ref{Grading}.
 
 \subsubsection{Double-column defects}
-Most of the modules failing the X-ray qualification fail due to one or in a few cases two defective double-columns (DCs) on one or multiple ROCs. 16 (5\%) L2 modules and 22 (17\%) L1 modules have such problems with defective DCs. This high percentage for L1 was already reduced by introducing an electrical DC test in the wafer test which already sorted out a large fraction of ROCs with DC problems. Various types of DC defects have been observed. For some modules it can be noticed either on the hitmaps, or when calibrate signals are used, or sometimes also for both. For some modules, these defects can be associated to defective timestamp or data buffers, but this is not the case for all modules. Other cases include address decoding issues that only appear when all pixels are enabled at the same time. One example can be seen in Figures~\ref{DCHitmap} and \ref{DCEfficiencymap} where one double-column does neither see X-rays nor internal calibrate signals when it is exposed to radiation. In this case, the problem could be traced back to defective timestamp buffers.
+Most of the modules failing the X-ray qualification fail due to one or in a few cases two defective double-columns (DCs) on one or multiple ROCs. 16 (5\%) L2 modules and 22 (17\%) L1 modules have such problems with defective DCs. This high percentage for L1 modules was already reduced by introducing an electrical DC test in the wafer test which already sorted out a large fraction of ROCs with DC problems. Various types of DC defects have been observed. For some modules it can be noticed by an absence of hits either on the hitmaps, or when calibrate signals are used, or sometimes also for both. For some modules, these defects can be associated to defective timestamp or data buffers, but this is not the case for all modules. Other cases include address decoding issues that only appear when all pixels are enabled at the same time. One example can be seen in Figures~\ref{DCHitmap} and \ref{DCEfficiencymap} where one double-column does neither see X-rays nor internal calibrate signals when it is exposed to radiation. In this case, the problem could be traced back to defective timestamp buffers.
 
 \begin{figure} [h!]
 \centering
-\begin{minipage}{.48\textwidth}
+\begin{minipage}[t]{.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{./Figures/DC_HitMap.png}
   \captionof{figure}{Hit map of a ROC with a defective DC.}
   \label{DCHitmap}
 \end{minipage}%
 \hspace{2mm}
-\begin{minipage}{.48\textwidth}
+\begin{minipage}[t]{.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{./Figures/DC_EfficiencyMap.png}
   \captionof{figure}{Number of correctly read out test pulses per pixel (out of 50) for the same ROC at an X-ray hit rate of approximatively \SI{150}{\mega\hertz\per\square\centi\meter}.}
@@ -826,8 +834,9 @@ Most of the modules failing the X-ray qualification fail due to one or in a few 
 \end{minipage}
 \end{figure}
 
+
 \subsubsection{Bump bonding defects}
-Another reason of failure is the number of bad bump bonds (BB) which means that the connection between the read-out chip and the sensor is broken. This concerns 5 L2 and 2 L1 modules. Furthermore, 37 L2 modules are downgraded to B due to a bad BB quality. In order to further constrain the number of bad bump bonds, no module with more than 200 BB defects was selected to be installed in the detector. Figure~\ref{BB} shows a module map where lighter colours designate pixels where the bump bonds are defective for several modules. Here, the linear structures come from modules with a defective DC which is misinterpreted as broken BB. This map shows that most of the BB defects appear on the edges and the corners of ROCs, forming so-called "church windows". 
+Another reason of failure is the number of broken bump bonds (BB) which means that the connection between the read-out chip and the sensor is broken. This concerns 5 L2 and 2 L1 modules. Furthermore, 37 L2 modules are downgraded to B due to a bad BB quality. In order to further constrain the number of bad bump bonds, no module with more than 200 BB defects was selected to be installed in the detector. Figure~\ref{BB} shows a module map where lighter colours designate pixels where the bump bonds are defective for several modules. Here, the linear structures come from modules with a defective DC which is misinterpreted as broken BBs. This map shows that most of the BB defects appear on the edges and the corners of ROCs, forming so-called "church windows". 
 
 \begin{figure} [h!] \centering 
 \includegraphics[width=\textwidth, angle=0] {./Figures/Xray_BB_All.png}
@@ -836,12 +845,63 @@ Overview of all bump bonding defects for the L2 module production.}
 \end{figure}
 
 \subsubsection{Defective HDI}
-Six L2 modules were rejected due to a defective batch of HDIs which were used for those modules. For these HDI, the resistance of the groundline was too high, such that the delivered analog current for ROCs further away from the TBM is not sufficient for operation. This issue should not appear again as this is now tested in the HDI qualification.
+Six L2 modules were rejected due to a defective batch of HDIs which was used for those modules. For these HDI, the resistance of the ground line is too high, such that the delivered analog current for ROCs further away from the TBM is not sufficient for operation. This issue should not appear again as this is now tested in the HDI qualification.
 
 \clearpage
 
 \begin{appendices}
 %\appendix
+
+\section{Regulation for the use of the X-ray setup} \label{Regulation}
+
+\newpage
+
+\begin{center}
+{\Large \textbf{Regulation for the use of the}}
+\end{center}
+\begin{center}
+{\Large \textbf{ISO-Debyeflex 3003 X-ray device at the }}
+\end{center}
+\begin{center}
+{\Large \textbf{Institute for Particle Physics, ETH~Z\"urich}}
+\end{center}
+
+\vspace{1cm}
+
+
+\section*{General}
+
+The Institute for Particle Physics operates a \SI{3500}{\watt} / \SI{60}{\kilo\volt} X-ray generator from the company General Electric for the testing of detectors in the laboratory HPK C25. This device can produce ionising radiation, its use is therefore regulated by the law for radiation safety. All personnel working with this device must be trained for its operation and informed about its potential dangers. The regulations which are issued by the officer of radiation safety must be followed. The officer of radiation safety is available for questions and the solutions of problems concerning radiation safety.
+
+\section*{Danger potential}
+
+The X-ray tube produces bremsstrahlung with a (anode dependant) characteristic energy spectrum of up to \SI{60}{\kilo\electronvolt}. Without filtering and shielding this can lead to a dose output of several \si{\milli\sievert} per minute at a distance of \SI{20}{\cm}. Therefore the potential of danger from the tube is considerable. For this reason the equipment is built with inherent protection. It cannot - except for grossly negligent manner - be operated without shielding. The dose output at the outer surfaces of the shielding is below \SI{1}{\micro\sievert} per hour.
+
+\section*{Operating regulations}
+
+Only trained personnel may operate the device. Unauthorised persons have no admittance to the room, it must be locked while not in use. Before starting the operation of the device it must be ensured that the shielding is correctly closed. The shielding is equipped with a safety interlock which will turn off the high voltage of the device immediately when it is opened. Nevertheless the opening of the device without turning off the controlling device or closing the shutters of the tube housing is strictly forbidden. The manipulation of the safety interlock is considered grossly negligent. If operating conditions are significantly changed (e. g. position of the X-ray tube), the dose rate at the surface of the cabinet has to be remeasured by a suitable X-ray dose rate meter.
+
+\newpage 
+\section*{Operating instructions}
+
+In order to work with the device the following safety mechanisms must be considered. The high voltage will not turn on unless the X-ray cabin safety system is activated by pressing the green, round (not square) 'Start' button and closing its doors. Additionally the emergency stop button must be in a released state. When this is established more safety mechanisms prevent the opening of the electrical shutter: the circuit breaker connected to the corresponding shutter must be closed and the shutter safety switch mechanically (not manually) pressed. Lastly the mechanical shutter must be hold open mechanically. Any neglected safety mechanism will prevent the emission of an X-ray beam. In order to actually start the high voltage the square 'Start' button must be pressed and to open a shutter it must be selected on the screen using the function keys. The 'Stop' button turns off the high voltage and closes all shutters. At all times the emergency stop button can be pressed which will stop the X-ray emission in any case.
+
+\section*{Individual responsibility}
+
+Every individual is responsible that the safety measures mentioned above are followed for their own safety as well as the safety of others.
+
+\section*{Agreement}
+I hereby confirm that I have been informed about the regulations for the use of the X-ray device ISO Debyeflex 3003. \\
+\\
+Surname: ........................................................... \\
+\\
+First name: ........................................................ \\
+\\
+Place, date: ......................................................... \\
+\\
+Signature: ...........................................................
+
+\newpage
 
 \section{Replacement of Peltier elements in the climatic chamber} \label{Peltier}
 
@@ -849,11 +909,11 @@ These steps summarize the necessary work to replace a Peltier element in the X-r
 \begin{itemize}
 \item Unscrew the plate holding the temperature monitor (Shown on Picture~\ref{Commandboard} - careful, cables are attached to it).
 \item Verify which Peltier elements are faulty by only connecting one Peltier at a time (see Figure~\ref{Step2}). If it is faulty, the Peltier element will not draw any current as seen on the power supply.
-\item Remove water supplies and serial adapter from the right side of the climatic chamber.
-\item Unscrew top frame (see Figure~\ref{Step4} - upper screws on the sides).
-\item Remove front, back and right side panels (see Figure~\ref{Step5a} and \ref{Step5b}).
-\item Remove cooling plate. The temperature sensor must be unplugged for this (see Figure~\ref{Step6}).
-\item Unscrew Peltier element connector (see Figure~\ref{Step7}), unplug temperature sensor on copper block if access is needed to the Peltiers in the back.
+\item Remove the water supplies and the serial adapter from the right side of the climatic chamber.
+\item Unscrew the top frame (see Figure~\ref{Step4} - upper screws on the sides).
+\item Remove the front, back and right side panels (see Figure~\ref{Step5a} and \ref{Step5b}).
+\item Remove the cooling plate. The temperature sensor must be unplugged for this (see Figure~\ref{Step6}).
+\item Unscrew the Peltier element connector (see Figure~\ref{Step7}), unplug the temperature sensor on the copper block if access is needed to the Peltiers in the back.
 \item Take out all the Peltier elements, remove the thermal grease, and replace the broken ones.
 \item Apply thermal grease on the copper block at the dedicated spots, put the Peltiers on top (see Figure~\ref{Step9a} and \ref{Step9b}).
 \item Reconnect the Peltier elements.
@@ -933,27 +993,25 @@ These steps summarize the necessary work to replace a Peltier element in the X-r
 \newpage
 \section{Cleaning of the X-ray filter} \label{Filter}
 
-Before performing this operation, make sure that the dirty filter is actually the cause of the problem. To do this, turn ID3003 program off, hold the "Enter" button, turn the key to "Stand By" and select 2. Then select item 02 "Preset flow rate" which will show the water flow. It should be around \SI{6}{\litre\per\minute}. If the flow is below \SI{3.5}{\litre\per\minute}, the system will not start any more, and the filter has to be cleaned.
+Before performing this operation, make sure that the dirty filter is actually the cause of the problem. To do this, turn off the ID3003 program, hold the "Enter" button, turn the key to "Stand By" and select item 02 "Preset flow rate" which will show the water flow. It should be around \SI{6}{\litre\per\minute}. If the flow is below \SI{3.5}{\litre\per\minute}, the system will not start any more, and the filter has to be cleaned.
 \\
 
 \textbf{
 WARNING:  \\
 \\
-Only unmount the tube if you know what you are doing. Read the manuals. This instruction alone does not qualify you for doing the operation. If you have doubts, call the reseller company Fisch and Partner! 
+Only unmount the tube if you know what you are doing. Read the manuals. This instruction alone does not qualify you for doing the operation. If you have doubts, call the reseller company Fisch and Partner! \\
 \\
-\\
-Handle tube carefully, do not touch beryllium windows. If they get wet, carefully dry them WITHOUT exerting force to them. Water on the windows causes them to corrode.
-\\
+Handle tube carefully, do not touch beryllium windows. If they get wet, carefully dry them WITHOUT exerting force to them. Water on the windows causes them to corrode. \\
 \\
 Beryllium is poisonous when in contact with skin and VERY brittle! Note that there are 4 windows in total.}
 
 \begin{itemize}
 
-\item Close water return and supply at the ceiling of the lab (in this order to prevent static pressure) and the inlet at the wall. Empty hoses by dis-attaching them far away from the setup and empty them in a bucket. Remove devices below x-ray tube as it may get wet.empty the tubes. 
+\item Close water return and supply at the ceiling of the lab (in this order to prevent static pressure) and the inlet at the wall. Empty hoses by dis-attaching them far away from the setup and empty them in a bucket. Remove devices below x-ray tube as they may get wet.
 
 \item Carefully unscrew the tube base plate from the mounting rack (2 big diagonal slotted screws) and catch the water which will start leaking out. The tube with the base plate is pressed towards the power connector in the back with a spring, one has to hold it and be careful otherwise if might pop out.
 
-\item Pull out the tube very carefully without bumping it against the housing of the tube. The tube is at very low pressure and can implode if it breaks. Danger by flying shards! Place it in a safe place. It is fine to lay it onto the glass cylinder. Do not touch the beryllium windows, if they get wet, carefully dry them without exerting force to them (e.g. suck the water with the corner of a soft tissue. Detach the base plate from the tube by unscrewing 4 hex screws as shown in Figures~\ref{screws1} and \ref{screws2}. Two of these screws are hidden in the holes of the front plate. Figure~\ref{frontmountplate} shows the front plate which was unscrewed from the X-ray tube.
+\item Pull out the tube very carefully without bumping it against the housing of the tube. The tube is at very low pressure and can implode if it breaks. Danger by flying shards! Place it in a safe place. It is fine to lay it onto the glass cylinder. Do not touch the beryllium windows, if they get wet, carefully dry them without exerting force to them (e.g. suck the water with the corner of a soft tissue). Detach the base plate from the tube by unscrewing 4 hex screws as shown in Figures~\ref{screws1} and \ref{screws2}. Two of these screws are hidden in the holes of the front plate. Figure~\ref{frontmountplate} shows the front plate which was unscrewed from the X-ray tube.
 
 \item The filter is in a casing below on the base plate (see Figure~\ref{holder}). Remove the filter cap carefully (it has a $\sim 0.5 \times 10$\;\si{\milli\meter} slit on the top). Corrosion might make the cap stick to the baseplate. If needed, use two screw drivers to lever the cap off without harming the baseplate itself. Then remove the filter from the filter cap by carefully pressing it out e.g. with the blunt side of a cutter.
 
@@ -1017,7 +1075,7 @@ Beryllium is poisonous when in contact with skin and VERY brittle! Note that the
 \begin{minipage}{.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{./Figures/holder.png}
-  \captionof{figure}{Casing of the filter removed from the X-ray tube.}
+  \captionof{figure}{Casing of the filter removed from the front plate.}
   \label{holder}
 \end{minipage}
 \end{figure}
@@ -1031,22 +1089,7 @@ Filter and its casing.}
 
 \section{Grading criteria for L1 and L2 modules X-ray qualification} \label{Grading}
 
-After the X-ray qualification, a grade A, B or C is assigned to every ROC on a module, where A are almost perfect ROCs, B are ROCs with some minor defects that can still be used in the detector, and C are ROCs which are not to be installed. The global module grade is the worst of the grades of all the ROCs on the module. A ROC can be downgraded either due to one of its performance parameters or due to a too high number of defective pixels. When more than 42 pixels on a ROC are defective, the ROC is graded B, if there are more than 168, it is graded C. Furthermore, no module with more than 200 bump bond defects were accepted. The performance parameters leading to a downgrade are shown in Table~\ref{performanceparameters} and the reasons for a pixel being defective in Table~\ref{defectivepixel}.
-
-\begin{table}[h!]
-\centering
-\caption{Performance parameters of a ROC leading to a downgrade}
-\label{performanceparameters}
-\begin{tabular}{@{}lcc@{}}
-\toprule
-                                             & B & C \\ \midrule
-Average noise \footnote{only for L2 modules} [e$^{-}$] & $>300$   &  $>400$ \\
-Efficiency 120/300 MHz/cm2   &  $>98\%$  & $>95\%$ \\
-Column uniformity problems &  - & $\geq 1$ \\
-Readout uniformity problems &  -  & $\geq 1$ \\ \bottomrule
-\end{tabular}
-\end{table}
-
+After the X-ray qualification, a grade A, B or C is assigned to every ROC on a module, where A are almost perfect ROCs, B are ROCs with some minor defects that can still be used in the detector, and C are ROCs which are not to be installed. The global module grade is the worst of the grades of all the ROCs on the module. A ROC can be downgraded either due to one of its performance parameters or due to a too high number of defective pixels. When more than 42 pixels on a ROC are defective, the ROC is graded B, if there are more than 168, it is graded C. Furthermore, no module with more than 200 bump bond defects are accepted. The performance parameters leading to a downgrade are shown in Table~\ref{performanceparameters} and the reasons for a pixel being defective in Table~\ref{defectivepixel}.
 
 \begin{table}[h!]
 \centering
@@ -1061,9 +1104,27 @@ Hot pixel & can't be re-trimmed and has to be masked \\ \bottomrule
 \end{tabular}
 \end{table}
 
+\clearpage
+
+\begin{table}[h!]
+\centering
+\caption{Performance parameters of a ROC leading to a downgrade}
+\label{performanceparameters}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+                                             & B & C \\ \midrule
+Average noise\footnotemark \hspace{0.0001mm} [e$^{-}$] & $>300$   &  $>400$ \\
+Efficiency 120/300\footnotemark \si{\mega\hertz\per\centi\meter\square}  &  $<98\%$  & $<95\%$ \\
+Column uniformity problems &  - & $\geq 1$ \\
+Readout uniformity problems &  -  & $\geq 1$ \\ \bottomrule
+\end{tabular}
+\end{table}
+\footnotetext[4]{only for L2 modules}
+\footnotetext{\SI{120}{\mega\hertz\per\centi\meter\square} for L2 and \SI{300}{\mega\hertz\per\centi\meter\square} for L1 modules}
+
 \section{ElCommandante configuration files}  \label{Config}
-The only files that need to be modified are the config/elComandante.conf and the config/elComandante.ini files. The first of those is used to indicate which port is occupied by the different devices steered by elCommandante. In the second one, one should indicate details about which tests to execute and under which conditions (temperature, X-ray hit rate).
-Please note that for readability reasons some lines are split into several lines. For testing, its needs to be written in one line
+The only files that need to be modified are the \textbf{./config/elComandante.conf} and the \textbf{./config/elComandante.ini} files. The first of those is used to indicate which port is occupied by the different devices steered by \textbf{elCommandante}. In the second one, details about which tests are to be executed and under which conditions (temperature, X-ray hit rate) should be indicated.
+Please note that for readability reasons some lines in the following examples are split into several lines. For testing, this change needs to be reverted.
 \subsection{L1}
 elCommandante.ini:
 \begin{Verbatim}[frame=single,fontsize=\footnotesize]
@@ -1691,7 +1752,7 @@ checkForTars = False
 
 \section{Configuration files for \textbf{pXar}} \label{pxarstartparameters}
 
-Table~\ref{StartParameters} lists all files that are required by \textbf{pXar} in order to start. In the table, \# designates the Vcal value to which the module was trimmed, if it has not yet been trimmed, \# is blank. * stands for the ROC number, and \& for the TBM core (0a, 0b for L2 modules, 0a, 0b, 1a, 1b for L1 modules).
+Table~\ref{StartParameters} lists all files that are required by \textbf{pXar} in order to start. In the table, \# designates the Vcal value to which the module was trimmed, if it has not yet been trimmed, \# is blank. The ROC number is represented by *, and \& stands for the TBM core (0a, 0b for L2 modules, 0a, 0b, 1 and 1b for L1 modules).
 
 These files can automatically be generated by \textbf{pXar} as explained on the corresponding \textit{twiki} page whose link can be found in Appendix~\ref{Links}.
 
@@ -1718,7 +1779,7 @@ trimParameters\#\_C*.dat      & nRocs   & Trimbit configuration for each pixel  
 
 \section{MoReWeb results - Module overview} \label{ModuleOverview}
 
-This section shows some results of an excellent L1 and L2 module module as seen on the module overview page of \textbf{MoReWeb}. Figure~\ref{Table} shows a L2 ROC overview table, which gives the most important information about each ROC. For L1, the table would look similar, except that the noise is considerably higher, and that the efficiency is evaluated at \SI{150}{\mega\hertz\per\centi\meter\square} and at \SI{300}{\mega\hertz\per\centi\meter\square}. Figures~\ref{HitOverviewL1} and \ref{HitOverview} show a hitmap respectively of a L1 and a L2 module. One can clearly distinguish the difference between both due to the position of the Molex connector and the position and number of TBMs. Figures~\ref{ThresholdOverviewL1} and \ref{ThresholdOverview} give the threshold of each pixel for a L1 and a L2 module. One can see that the threshold is higher for L1 modules as expected, and that the threshold is further increased for the edge pixels. Figures~\ref{NoiseOverviewL1} and \ref{NoiseOverview} show the noise of each pixel of a L1 and a L2 module. Here as well one notices the much higher noise for a L1 module. Figure~\ref{AliveOverview} shows the efficiency of every pixel without exposing the module to radiation. This map looks similar for both types of modules. figure~\ref{EfficiencyOverview} shows the efficiency of a L2 module at a X-ray rate of \SI{250}{\mega\hertz\per\centi\meter\square}. Here, one can clearly see the loss of efficiency, especially in the edge columns of each ROC. For a L1 module, the efficiency should still be above 98\% at this rate. 
+This section shows some results of an excellent L1 and L2 module as seen on the module overview page of \textbf{MoReWeb}. Figure~\ref{Table} shows a L2 ROC overview table, which gives the most important information about each ROC. For L1, the table would look similar, except that the noise is considerably higher, and that the efficiency is evaluated at \SI{150}{\mega\hertz\per\centi\meter\square} and at \SI{300}{\mega\hertz\per\centi\meter\square}. Figures~\ref{HitOverviewL1} and \ref{HitOverview} show a hitmap respectively of a L1 and a L2 module. One can clearly distinguish the difference between both due to the position of the Molex connector and the position and number of TBMs. Figures~\ref{ThresholdOverviewL1} and \ref{ThresholdOverview} give the threshold of each pixel for a L1 and a L2 module. One can see that the threshold is higher for L1 modules as expected, and that the threshold is further increased for the edge pixels. Figures~\ref{NoiseOverviewL1} and \ref{NoiseOverview} show the noise of each pixel of a L1 and a L2 module. Here as well one notices the much higher noise for a L1 module. Figure~\ref{AliveOverview} shows the efficiency of every pixel without exposing the module to radiation. This map looks similar for both types of modules. Figure~\ref{EfficiencyOverview} shows the efficiency of a L2 module at a X-ray rate of \SI{250}{\mega\hertz\per\centi\meter\square}. Here, one can clearly see the loss of efficiency, especially in the edge columns of each ROC. For a L1 module, the efficiency should still be above 98\% at this rate. 
 
 \begin{figure} [h!] \centering 
 \includegraphics[width=\textwidth, angle=0] {./Figures/Table.png}
@@ -1777,7 +1838,8 @@ Map of a L2 module showing the efficiency of each pixel when exposing the module
 
 \section{MoReWeb results - Chip overview} \label{ChipOverview}
 
-This section shows some Figures of well working ROCs on L1 and L2 modules. Figures~\ref{EfficiencyInterpolationL1} and \ref{EfficiencyInterpolation} show the efficiency of a L1 and a L2 ROC as a function of pixel hit rate. Clearly, the efficiency is higher at comparable rates for the L1 ROC. Figure~\ref{UniformityEvent} allows to verify the uniformity of the ROC as a function of time and for all columns. Here the number of hits per event should remain constant, and there should not be large differences in the number of events for all columns. Small variations are expected due to the larger size of pixels in columns 0 and 52 and due to some features on the HDI which can shied part of a ROC. Figure~\ref{Uniformity} shows the scaled ratio of the number of X-ray hits collected per column for two different X-ray rates. This should be close to one for all columns. Figures~\ref{SCurveL1} and \ref{SCurveL2} show the noise of the L1 and the L2 ROC when exposed to radiation. It is obviously much higher for the L1 ROC than it is for the L2 ROC. No grading is applied on the noise of L1 ROCs. 
+This section shows some Figures of well working ROCs on L1 and L2 modules. Figures~\ref{EfficiencyInterpolationL1} and \ref{EfficiencyInterpolation} show the efficiency of a L1 and a L2 ROC as a function of pixel hit rate. To obtain this Figure, the \textit{xpixelalive} test is performed at different rates. In each test, the average efficiency of all pixels of a DC is measured as well as the average hit rate, leading to one point in the graph per DC. Clearly, the efficiency is higher at comparable rates for the L1 ROC.  Figure~\ref{UniformityEvent} allows to verify the uniformity of the ROC as a function of time and for all columns. Here the number of hits per event should remain constant, and there should not be large differences in the number of events for all columns. Small variations are expected due to the larger size of pixels in columns 0 and 52 and due to some features on the HDI which can shield part of a ROC. Figure~\ref{Uniformity} shows the scaled ratio of the number of X-ray hits collected per column for two different X-ray rates. This should be close to one for all columns. Figures~\ref{SCurveL1} and \ref{SCurveL2} show the noise of the L1 and the L2 ROC when exposed to radiation. It is obviously much higher for the L1 ROC than it is for the L2 ROC. No grading is applied on the noise of L1 ROCs. 
+
 
 \begin{figure} [h!]
 \centering
@@ -1798,14 +1860,14 @@ This section shows some Figures of well working ROCs on L1 and L2 modules. Figur
 
 \begin{figure} [h!]
 \centering
-\begin{minipage}{.48\textwidth}
+\begin{minipage}[t]{.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{./Figures/ColumnUniformityEventsPerColumn.png}
   \captionof{figure}{Number of X-ray hits per event per column.}
   \label{UniformityEvent}
 \end{minipage}%
 \hspace{2mm}
-\begin{minipage}{.48\textwidth}
+\begin{minipage}[t]{.48\textwidth}
   \centering
   \includegraphics[width=\textwidth]{./Figures/ColumnUniformityPerColumn.pdf}
   \captionof{figure}{Scaled ratio between the number of X-ray hits acquired at two different X-ray rates.}
@@ -1835,29 +1897,29 @@ This section shows some Figures of well working ROCs on L1 and L2 modules. Figur
 \begin{itemize}
 \item ETH Pixel Group webpage: Links to the results of the 2015-2016 production can be found here. \\
 \url{https://cmspixel.phys.ethz.ch/}
-\item ETH labs control: This webpage allows to control different parameters such as temperature and humidity in all ETH labs.
+\item ETH labs control: This webpage allows to control different parameters such as temperature and humidity in all ETH labs. \\
 \url{http://cmspixel2.ethz.ch:8080/}
-\item pxar twiki: This webpage gives some information on how to install and use pxar
+\item \textbf{pXar} twiki: This webpage gives some information on how to install and use \textbf{pXar}. \\
 \url{https://twiki.cern.ch/twiki/bin/viewauth/CMS/Pxar}
-\item pxar github: The source code for pxar can be found here.
+\item \textbf{pXar} github: The source code for \textbf{pXar} can be found here. \\
 \url{https://github.com/psi46/pxar}
-\item elCommandante twiki: This webpage gives some information on how to install and use ElCommandante
+\item \textbf{elCommandante} twiki: This webpage gives some information on how to install and use \textbf{elCommandante}. \\
 \url{https://twiki.cern.ch/twiki/bin/viewauth/CMS/ElComandante}
-\item elCommandante github: The source code for elCommandante can be found here.
+\item \textbf{elCommandante} github: The source code for \textbf{elCommandante} can be found here.\\
 \url{https://github.com/psi46/elComandante/}
-\item MoReWeb twiki: This webpage gives some information on how to install and use MoReWeb
+\item \textbf{MoReWeb} twiki: This webpage gives some information on how to install and use \textbf{MoReWeb}. \\
 \url{https://twiki.cern.ch/twiki/bin/view/CMS/MoReWeb}
-\item MoReWeb github: The source code for MoReWeb can be found here.
+\item \textbf{MoReWeb} github: The source code for \textbf{MoReWeb} can be found here. \\
 \url{https://github.com/psi46/MoReWeb}
-\item Phase 0 detector module qualification: Here, results from the qualification of modules for the phase 0 detector can be found.
+\item Phase 0 detector module qualification: Gives results from the qualification of modules for the phase 0 detector. \\
 \url{https://cmspixel.phys.ethz.ch/moduleTests/moduleDB/prodTable.php?Serie=00}
-\item PSI Phase I webpage: Information on all components of a module is available here.
+\item PSI Phase I webpage: Information on all components of the modules is available here. \\
 \url{http://cms.web.psi.ch/phase1/}
-\item Pisa Database: This database lists all test results from the phase I production in 2015-2016:
+\item Pisa Database: This database lists all test results from the phase I production in 2015-2016. \\
 \url{http://cmspixelprod.pi.infn.it/index.html}
-\item Specification of BPix modules: Some information of tests of individual components of modules 
+\item Specification of BPix modules: Some information on the tests of individual components of modules is shown here. \\ 
 \url{https://twiki.cern.ch/twiki/bin/viewauth/CMS/BPixSpecs}
-\item Other links: This twiki links to many other pages related to the Phase I upgrade project.
+\item Other links: This twiki links to many other pages related to the Phase I upgrade project. \\
 \url{https://twiki.cern.ch/twiki/bin/view/CMS/CMSPixelPhase1}
 
 \end{itemize}
